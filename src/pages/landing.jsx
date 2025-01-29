@@ -1,15 +1,14 @@
-import { useEffect } from "react";
-import { Helmet } from "react-helmet-async";
-
-import gtag from "../gtag";
 import Chat from "../sections/Chat";
-import MarketingServices from "../sections/marketing-services";
-import MarketingNewsletter from "../sections/marketing-newsletter";
-import MarketingLandingHero from "../sections/marketing-landing-hero";
-import MarketingLandingFaqs from "../sections/marketing-landing-faqs";
-import MarketingServicesInclude from "../sections/marketing-services-include";
+import { Helmet } from "react-helmet-async";
 import MarketingCaseStudyDetails from "../sections/marketing-case-study-details";
+import MarketingLandingFaqs from "../sections/marketing-landing-faqs";
+import MarketingLandingHero from "../sections/marketing-landing-hero";
+import MarketingNewsletter from "../sections/marketing-newsletter";
+import MarketingServices from "../sections/marketing-services";
 import MarketingServicesHowItWorks from "../sections/marketing-services-how-it-works";
+import MarketingServicesInclude from "../sections/marketing-services-include";
+import gtag from "../gtag";
+import { useEffect } from "react";
 
 export default function MarketingLandingPage() {
   useEffect(() => {
@@ -23,9 +22,7 @@ export default function MarketingLandingPage() {
   return (
     <>
       <Helmet>
-        <title>
-          Nucleoid - Neuro-Symbolic AI with Knowledge Graph - Inspired by Nature
-        </title>
+        <title>GreyCollar</title>
       </Helmet>
 
       <MarketingLandingHero />
