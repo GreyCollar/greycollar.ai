@@ -1,6 +1,6 @@
-import { alpha } from "@mui/material/styles";
-
 import { grey, primary, secondary } from "src/theme/palette";
+
+import { alpha } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 
@@ -131,12 +131,14 @@ export const presetOptions = [
 ];
 
 export function getPrimary(preset) {
-  return {
-    default: { primary, secondary },
-    preset01,
-    preset02,
-    preset03,
-    preset04,
-    preset05,
-  }[preset];
+  return (
+    {
+      default: { primary, secondary },
+      preset01,
+      preset02,
+      preset03,
+      preset04,
+      preset05,
+    }[preset] || { primary, secondary }
+  );
 }
