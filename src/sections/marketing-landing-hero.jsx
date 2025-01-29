@@ -1,19 +1,17 @@
-import React from "react";
-
-import Box from "@mui/material/Box";
-import Fab from "@mui/material/Fab";
-import Link from "@mui/material/Link";
-import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
-import Container from "@mui/material/Container";
-import Grid from "@mui/material/Unstable_Grid2";
-import Typography from "@mui/material/Typography";
 import { alpha, useTheme } from "@mui/material/styles";
 
-import { useResponsive } from "src/hooks/use-responsive";
-
-import Image from "src/components/image";
+import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import Fab from "@mui/material/Fab";
+import Grid from "@mui/material/Unstable_Grid2";
 import Iconify from "src/components/iconify";
+import Image from "src/components/image";
+import Link from "@mui/material/Link";
+import React from "react";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import { useResponsive } from "src/hooks/use-responsive";
 
 // ----------------------------------------------------------------------
 
@@ -89,51 +87,8 @@ export default function MarketingLandingHero() {
             </Typography>
 
             <Typography variant="h2" sx={{ my: 2 }}>
-              Neuro-Symbolic&nbsp;AI with&nbsp;Knowledge&nbsp;Graph
+              GreyCollar
             </Typography>
-
-            <Typography sx={{ color: "text.secondary" }}>
-              Reasoning Engine with{" "}
-              <Link href="https://nucleoid.com/docs">D(L)RE</Link> in Ubiquitous
-              Syntax
-            </Typography>
-
-            <Stack
-              spacing={3}
-              direction={{ xs: "column", sm: "row" }}
-              alignItems={{ xs: "center", md: "unset" }}
-              justifyContent={{ xs: "center", md: "unset" }}
-              sx={{ mt: 5 }}
-            >
-              <Button
-                variant="contained"
-                color="inherit"
-                size="large"
-                startIcon={<Iconify width={24} icon="carbon:document" />}
-                onClick={() =>
-                  window.location.assign("https://nucleoid.com/docs/")
-                }
-              >
-                Go to Docs
-              </Button>
-
-              <Stack
-                direction="row"
-                alignItems="center"
-                sx={{ typography: "h6" }}
-              >
-                <Fab
-                  size="medium"
-                  sx={{ mr: 1 }}
-                  onClick={() =>
-                    window.location.assign("https://nucleoid.com/ide/chat")
-                  }
-                >
-                  <Iconify width={24} icon="carbon:play" />
-                </Fab>
-                Try it out
-              </Stack>
-            </Stack>
           </Grid>
 
           {mdUp && (

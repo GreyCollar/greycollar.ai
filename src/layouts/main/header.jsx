@@ -1,26 +1,21 @@
-import PropTypes from "prop-types";
-
-import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
 import AppBar from "@mui/material/AppBar";
+import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import Toolbar from "@mui/material/Toolbar";
 import Container from "@mui/material/Container";
-import { useTheme } from "@mui/material/styles";
-
+import { HEADER } from "../config-layout";
+import HeaderShadow from "../common/header-shadow";
+import Logo from "src/components/logo";
+import NavDesktop from "./nav/desktop";
+import NavMobile from "./nav/mobile";
+import PropTypes from "prop-types";
+import Stack from "@mui/material/Stack";
+import StarUsOnGithub from "src/components/StarUsOnGitHub";
+import Toolbar from "@mui/material/Toolbar";
+import { bgBlur } from "src/theme/css";
+import { navConfig } from "./config-navigation";
 import { useOffSetTop } from "src/hooks/use-off-set-top";
 import { useResponsive } from "src/hooks/use-responsive";
-
-import { bgBlur } from "src/theme/css";
-
-import Logo from "src/components/logo";
-import StarUsOnGithub from "src/components/StarUsOnGitHub";
-
-import NavMobile from "./nav/mobile";
-import NavDesktop from "./nav/desktop";
-import { HEADER } from "../config-layout";
-import { navConfig } from "./config-navigation";
-import HeaderShadow from "../common/header-shadow";
+import { useTheme } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 
@@ -59,22 +54,6 @@ export default function Header({ headerOnDark }) {
         justifyContent="flex-end"
       >
         <Stack spacing={1} direction="row" alignItems="center">
-          <Button
-            variant="contained"
-            onClick={() =>
-              window.location.assign("https://nucleoid.com/ide/chat")
-            }
-            sx={{
-              mx: 1,
-              color: "white",
-              textTransform: "none",
-              background:
-                "linear-gradient(135deg, rgba(0,141,114,1) 0%, rgba(32,153,88,1) 100%)",
-              display: { xs: "none", md: "block" },
-            }}
-          >
-            Go to Nucleoid Chat
-          </Button>
           <StarUsOnGithub />
         </Stack>
       </Stack>

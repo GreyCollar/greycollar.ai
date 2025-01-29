@@ -1,11 +1,9 @@
-import { memo } from "react";
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
 import Link from "@mui/material/Link";
-import Typography from "@mui/material/Typography";
-
+import PropTypes from "prop-types";
 import { RouterLink } from "src/routes/components";
+import Typography from "@mui/material/Typography";
+import { memo } from "react";
 
 // ----------------------------------------------------------------------
 
@@ -44,21 +42,12 @@ function Logo({ single = false, sx }) {
         cursor: "pointer",
       }}
     >
-      <Typography
-        fontSize="34px"
-        fontWeight={400}
-        sx={{
-          background:
-            "linear-gradient(135deg, rgba(32,153,88,1) 0%, rgba(0,141,114,1) 100%)",
-          backgroundClip: "text",
-          WebkitBackgroundClip: "text",
-          MozBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-          MozTextFillColor: "transparent",
-        }}
-      >
-        Nucleoid
-      </Typography>
+      <img
+        src="https://cdn.nucleoid.com/greycollar/media/icon.png"
+        alt="GreyCollar"
+        width={40}
+        height={40}
+      />
     </Box>
   );
 

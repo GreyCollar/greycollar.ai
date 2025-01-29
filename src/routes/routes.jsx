@@ -1,15 +1,12 @@
-import { lazy, Suspense } from "react";
-import { Outlet, Navigate, useRoutes } from "react-router-dom";
-
-import { SplashScreen } from "src/components/loading-screen";
+import { Navigate, Outlet, useRoutes } from "react-router-dom";
+import { Suspense, lazy } from "react";
 
 import MainLayout from "../layouts/main";
+import { SplashScreen } from "src/components/loading-screen";
 
 const Page404 = lazy(() => import("src/pages/404"));
 const Page500 = lazy(() => import("src/pages/500"));
 const LandingPage = lazy(() => import("src/pages/landing"));
-const NaturalLanguagePage = lazy(() => import("src/pages/natural-language"));
-const ExpertPage = lazy(() => import("src/pages/expert"));
 
 // ----------------------------------------------------------------------
 
@@ -34,27 +31,6 @@ export default function Router() {
               index: true,
             },
           ],
-        },
-        {
-          path: "expert",
-          children: [
-            {
-              element: (
-                <MainLayout disabledSpacing>
-                  <ExpertPage />
-                </MainLayout>
-              ),
-              index: true,
-            },
-          ],
-        },
-        {
-          path: "natural-language",
-          element: (
-            <MainLayout disabledSpacing>
-              <NaturalLanguagePage />
-            </MainLayout>
-          ),
         },
         { path: "error", element: <Page500 /> },
         { path: "404", element: <Page404 /> },
