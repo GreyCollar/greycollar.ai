@@ -4,6 +4,7 @@ import { Tree, TreeNode } from "react-organizational-chart";
 
 import Iconify from "src/components/iconify";
 import styled from "styled-components";
+import tabsData from "./tabs.json";
 
 const CONSTANTS = {
   LINE_COLORS: {
@@ -12,14 +13,6 @@ const CONSTANTS = {
   },
   ANIMATION_INTERVAL: 2000,
 };
-
-const SERVICES = [
-  { title: "Receive Lead", icon: "logos:google-gmail", index: 0 },
-  { title: "Lead Research", icon: "academicons:researcherid", index: 1 },
-  { title: "Personalized outreach", icon: "skill-icons:linkedin", index: 2 },
-  { title: "Respond to objections", icon: "skill-icons:linkedin", index: 3 },
-  { title: "Confirm meeting", icon: "logos:google-meet", index: 4 },
-].map((service, index) => ({ ...service, id: `service-${index}` }));
 
 const StyledTreeNode = styled.div`
   display: flex;
@@ -78,8 +71,10 @@ export default function MarketingServicesInclude() {
   }, []);
 
   const treeData = useMemo(() => {
+    const currentServices = tabsData[selectedTab].services;
+
     const createNode = (index) => ({
-      ...SERVICES[index],
+      ...currentServices[index],
       children: [],
     });
 
@@ -89,14 +84,14 @@ export default function MarketingServicesInclude() {
       ...createNode(2),
       children: [objectionsNode, finalNode],
     };
-    const leadResearchNode = {
+    const secondNode = {
       ...createNode(1),
       children: [outreachNode],
     };
 
     return {
       ...createNode(0),
-      children: [leadResearchNode],
+      children: [secondNode],
     };
   }, []);
 
