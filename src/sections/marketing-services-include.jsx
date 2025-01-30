@@ -1,4 +1,12 @@
-import { Box, Card, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  Container,
+  Grid,
+  Tab,
+  Tabs,
+  Typography,
+} from "@mui/material";
 import React, { useEffect, useMemo, useState } from "react";
 import { Tree, TreeNode } from "react-organizational-chart";
 
@@ -58,6 +66,12 @@ const NodeTemplate = ({ nodeData }) => (
 export default function MarketingServicesInclude() {
   const [lineColor, setLineColor] = useState(CONSTANTS.LINE_COLORS.DEFAULT);
 
+  const [selectedTab, setSelectedTab] = useState(0);
+
+  const handleTabChange = (event, newValue) => {
+    setSelectedTab(newValue);
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       setLineColor((prevColor) =>
@@ -93,7 +107,7 @@ export default function MarketingServicesInclude() {
       ...createNode(0),
       children: [secondNode],
     };
-  }, []);
+  }, [selectedTab]);
 
   const renderTree = useMemo(() => {
     const render = (node) => (
@@ -114,6 +128,39 @@ export default function MarketingServicesInclude() {
   return (
     <Container sx={{ pt: { xs: 5, md: 10 }, pb: { xs: 10, md: 15 } }}>
       <Grid container spacing={3}>
+        {/* Tabs */}
+        <Grid xs={12} md={12} sx={{ mb: 3 }}>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <Tabs
+              value={selectedTab}
+              onChange={handleTabChange}
+              centered
+              sx={{
+                "& .MuiTabs-indicator": {
+                  backgroundColor: "primary.main",
+                },
+              }}
+            >
+              {tabsData.map((tab, index) => (
+                <Tab
+                  key={index}
+                  label={tab.title}
+                  sx={{
+                    "&.Mui-selected": {
+                      color: "primary.main",
+                    },
+                    "&:hover": {
+                      color: "primary.main",
+                      opacity: 0.7,
+                    },
+                  }}
+                />
+              ))}
+            </Tabs>
+          </Box>
+        </Grid>
+
+        {/* Content */}
         <Grid xs={12} md={12}>
           <Typography variant="h4" sx={{ mb: 2, textAlign: "center" }}>
             Our Marketing Services
@@ -124,6 +171,7 @@ export default function MarketingServicesInclude() {
           </Typography>
         </Grid>
 
+        {/* Bg */}
         <Grid item xs={12} md={7}>
           <Box
             sx={{
@@ -139,6 +187,7 @@ export default function MarketingServicesInclude() {
           />
         </Grid>
 
+        {/* Tree */}
         <Grid item xs={12} md={5}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Tree
