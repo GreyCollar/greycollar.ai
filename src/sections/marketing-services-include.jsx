@@ -1,94 +1,167 @@
-import Box from "@mui/material/Box";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
+import { Box, Card, Container, Grid, Typography } from "@mui/material";
+import React, { useEffect, useMemo, useState } from "react";
+import { Tree, TreeNode } from "react-organizational-chart";
 
-import Image from "src/components/image";
+import Iconify from "src/components/iconify";
+import styled from "styled-components";
 
-// ----------------------------------------------------------------------
+const CONSTANTS = {
+  LINE_COLORS: {
+    DEFAULT: "#ccc",
+    ACTIVE: "#4CAF50",
+  },
+  ANIMATION_INTERVAL: 2000,
+};
 
 const SERVICES = [
-  {
-    title: "Declarative",
-    description:
-      "Define application goals without specifying the procedures, simplifying development and maintenance.",
-    icon: "https://cdn.nucleoid.com/media/019-cube.png",
-  },
-  {
-    title: "Reasoning",
-    description:
-      "Our runtime environment automatically deduces and infers solutions based on the given logic, enhancing decision-making.",
-    icon: "https://cdn.nucleoid.com/media/015-code.png",
-  },
-  {
-    title: "Logic Graph",
-    description:
-      "Write code that mirrors human reasoning, making complex problem-solving more intuitive and efficient.",
-    icon: "https://cdn.nucleoid.com/media/007-AI.png",
-  },
-  {
-    title: "Contextual",
-    description:
-      "Applications understand and react to their context, offering smarter, situation-aware responses.",
-    icon: "https://cdn.nucleoid.com/media/028-network.png",
-  },
-  {
-    title: "Persistent",
-    description:
-      "Data persists in its natural logical form, streamlining management and ensuring integrity without manual database handling.",
-    icon: "https://cdn.nucleoid.com/media/019-database-5.png",
-  },
-  {
-    title: "JavaScript Syntax",
-    description:
-      "Extends JavaScript syntax to declaratively define logic and the runtime re-renders the syntax into executable code",
-    icon: "https://cdn.nucleoid.com/media/leaf.png",
-  },
-];
+  { title: "Receive Lead", icon: "logos:google-gmail", index: 0 },
+  { title: "Lead Research", icon: "academicons:researcherid", index: 1 },
+  { title: "Personalized outreach", icon: "skill-icons:linkedin", index: 2 },
+  { title: "Respond to objections", icon: "skill-icons:linkedin", index: 3 },
+  { title: "Confirm meeting", icon: "logos:google-meet", index: 4 },
+].map((service, index) => ({ ...service, id: `service-${index}` }));
 
-// ----------------------------------------------------------------------
+const StyledTreeNode = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.5rem;
+`;
 
-export default function MarketingServicesInclude() {
-  return (
-    <Container
+const NodeTemplate = ({ nodeData }) => (
+  <Card
+    sx={{
+      p: 2,
+      width: "90px",
+      height: "90px",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+      justifyContent: "center",
+      gap: 1,
+      borderRadius: 1,
+      bgcolor: "background.paper",
+      transition: "background-color 0.3s ease",
+      "&:hover": {
+        bgcolor: "grey.600",
+        cursor: "pointer",
+      },
+    }}
+  >
+    <Iconify icon={nodeData.icon} width={18} height={18} />
+    <Typography
+      variant="body2"
       sx={{
         textAlign: "center",
-        pt: { xs: 5, md: 10 },
-        pb: { xs: 10, md: 15 },
+        fontSize: "0.6rem",
+        fontWeight: "medium",
       }}
     >
-      <Box
-        sx={{
-          rowGap: 8,
-          columnGap: 10,
-          display: "grid",
-          gridTemplateColumns: {
-            xs: "repeat(1, 1fr)",
-            sm: "repeat(2, 1fr)",
-            md: "repeat(3, 1fr)",
-          },
-        }}
+      {nodeData.title}
+    </Typography>
+  </Card>
+);
+
+export default function MarketingServicesInclude() {
+  const [lineColor, setLineColor] = useState(CONSTANTS.LINE_COLORS.DEFAULT);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setLineColor((prevColor) =>
+        prevColor === CONSTANTS.LINE_COLORS.DEFAULT
+          ? CONSTANTS.LINE_COLORS.ACTIVE
+          : CONSTANTS.LINE_COLORS.DEFAULT,
+      );
+    }, CONSTANTS.ANIMATION_INTERVAL);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const treeData = useMemo(() => {
+    const createNode = (index) => ({
+      ...SERVICES[index],
+      children: [],
+    });
+
+    const finalNode = createNode(4);
+    const objectionsNode = createNode(3);
+    const outreachNode = {
+      ...createNode(2),
+      children: [objectionsNode, finalNode],
+    };
+    const leadResearchNode = {
+      ...createNode(1),
+      children: [outreachNode],
+    };
+
+    return {
+      ...createNode(0),
+      children: [leadResearchNode],
+    };
+  }, []);
+
+  const renderTree = useMemo(() => {
+    const render = (node) => (
+      <TreeNode
+        key={node.id}
+        label={
+          <StyledTreeNode>
+            <NodeTemplate nodeData={node} />
+          </StyledTreeNode>
+        }
       >
-        {SERVICES.map((value) => (
-          <div key={value.title}>
-            <Image
-              visibleByDefault
-              disabledEffect
-              alt="marketing market"
-              src={value.icon}
-              sx={{ width: 64, height: 64, mx: "auto" }}
-            />
+        {node.children?.map(render)}
+      </TreeNode>
+    );
+    return render;
+  }, []);
 
-            <Typography variant="h5" sx={{ mt: 5, mb: 2 }}>
-              {value.title}
-            </Typography>
+  return (
+    <Container sx={{ pt: { xs: 5, md: 10 }, pb: { xs: 10, md: 15 } }}>
+      <Grid container spacing={3}>
+        <Grid xs={12} md={12}>
+          <Typography variant="h4" sx={{ mb: 2, textAlign: "center" }}>
+            Our Marketing Services
+          </Typography>
+          <Typography variant="body2" sx={{ textAlign: "center" }}>
+            Work every lead and scale your sales activity. Automate your sales
+            process and turn leads into customers on autopilot.
+          </Typography>
+        </Grid>
 
-            <Typography sx={{ color: "text.secondary" }}>
-              {" "}
-              {value.description}{" "}
-            </Typography>
-          </div>
-        ))}
-      </Box>
+        <Grid item xs={12} md={7}>
+          <Box
+            sx={{
+              textAlign: "center",
+              mb: 6,
+              backgroundImage: "url(/assets/mark.png)",
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              backgroundPosition: "center",
+              height: { xs: 500, md: "100%" },
+              width: "100%",
+            }}
+          />
+        </Grid>
+
+        <Grid item xs={12} md={5}>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <Tree
+              lineWidth="2px"
+              lineColor={lineColor}
+              lineBorderRadius="10px"
+              lineStyle="dashed"
+              label={
+                <StyledTreeNode>
+                  <NodeTemplate nodeData={treeData} />
+                </StyledTreeNode>
+              }
+            >
+              {treeData.children.map(renderTree)}
+            </Tree>
+          </Box>
+        </Grid>
+      </Grid>
     </Container>
   );
 }
