@@ -1,17 +1,15 @@
-import { m } from "framer-motion";
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
+import IconButton from "@mui/material/IconButton";
+import Iconify from "src/components/iconify";
+import Image from "src/components/image";
+import PropTypes from "prop-types";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
-import { alpha, styled } from "@mui/material/styles";
-
 import { _socials } from "src/_mock";
 import { bgGradient } from "src/theme/css";
+import { m } from "framer-motion";
 
-import Image from "src/components/image";
-import Iconify from "src/components/iconify";
+import { alpha, styled } from "@mui/material/styles";
 import { varHover, varTranHover } from "src/components/animate";
 
 // ----------------------------------------------------------------------

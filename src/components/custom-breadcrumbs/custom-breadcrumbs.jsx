@@ -1,12 +1,10 @@
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
+import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
+import LinkItem from "./link-item";
+import PropTypes from "prop-types";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
-
-import LinkItem from "./link-item";
 
 // ----------------------------------------------------------------------
 

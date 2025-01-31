@@ -1,14 +1,12 @@
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
-import TextField from "@mui/material/TextField";
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
 import InputAdornment from "@mui/material/InputAdornment";
-
+import PropTypes from "prop-types";
+import Stack from "@mui/material/Stack";
 import SvgColor from "src/components/svg-color";
+import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
 
 // ----------------------------------------------------------------------
 

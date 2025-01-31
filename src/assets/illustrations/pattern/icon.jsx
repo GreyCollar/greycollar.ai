@@ -1,7 +1,7 @@
-import { memo } from "react";
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
+import PropTypes from "prop-types";
+import { memo } from "react";
+
 import { alpha, styled } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------

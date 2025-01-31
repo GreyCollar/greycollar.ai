@@ -1,11 +1,9 @@
-import PropTypes from "prop-types";
-
 import Link from "@mui/material/Link";
+import PropTypes from "prop-types";
+import { RouterLink } from "src/routes/components";
 import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-
 import { usePathname } from "src/routes/hooks";
-import { RouterLink } from "src/routes/components";
 
 // ----------------------------------------------------------------------
 

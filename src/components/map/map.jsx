@@ -1,14 +1,12 @@
-import PropTypes from "prop-types";
-import GoogleMapReact from "google-map-react";
-import { useState, useCallback } from "react";
-
 import Box from "@mui/material/Box";
-
 import { GOOGLE_MAP_API } from "src/config-global";
-
-import MapPopup from "./map-popup";
-import { mapStyle } from "./styles";
+import GoogleMapReact from "google-map-react";
 import MapMarker from "./map-marker";
+import MapPopup from "./map-popup";
+import PropTypes from "prop-types";
+import { mapStyle } from "./styles";
+
+import { useCallback, useState } from "react";
 
 // ----------------------------------------------------------------------
 

@@ -1,18 +1,15 @@
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import Stack from "@mui/material/Stack";
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
-
-import { paths } from "src/routes/paths";
-import { RouterLink } from "src/routes/components";
-
 import Iconify from "src/components/iconify";
+import PropTypes from "prop-types";
+import { RouterLink } from "src/routes/components";
+import Stack from "@mui/material/Stack";
 import SvgColor from "src/components/svg-color";
 import TextMaxLine from "src/components/text-max-line";
+import Typography from "@mui/material/Typography";
+import { paths } from "src/routes/paths";
 
 // ----------------------------------------------------------------------
 

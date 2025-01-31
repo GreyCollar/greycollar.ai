@@ -1,9 +1,7 @@
-import PropTypes from "prop-types";
-
-import Typography from "@mui/material/Typography";
-import ListItemButton from "@mui/material/ListItemButton";
-
 import Iconify from "../../iconify";
+import ListItemButton from "@mui/material/ListItemButton";
+import PropTypes from "prop-types";
+import Typography from "@mui/material/Typography";
 
 // ----------------------------------------------------------------------
 

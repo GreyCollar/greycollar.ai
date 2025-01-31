@@ -1,11 +1,9 @@
-import { memo } from "react";
-import { m } from "framer-motion";
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
-
-import Dot from "./dots";
 import Circle from "./circle";
+import Dot from "./dots";
+import PropTypes from "prop-types";
+import { m } from "framer-motion";
+import { memo } from "react";
 
 // ----------------------------------------------------------------------
 

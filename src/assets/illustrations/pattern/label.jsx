@@ -1,8 +1,7 @@
-import { memo } from "react";
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
+import PropTypes from "prop-types";
 import Stack from "@mui/material/Stack";
+import { memo } from "react";
 
 // ----------------------------------------------------------------------
 

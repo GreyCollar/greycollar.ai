@@ -1,13 +1,12 @@
-import { m } from "framer-motion";
-import { Helmet } from "react-helmet-async";
-
 import Button from "@mui/material/Button";
-import Typography from "@mui/material/Typography";
-
-import Image from "../components/image";
 import CompactLayout from "../layouts/compact";
+import { Helmet } from "react-helmet-async";
+import Image from "../components/image";
 import { RouterLink } from "../routes/components";
-import { varBounce, MotionContainer } from "../components/animate";
+import Typography from "@mui/material/Typography";
+import { m } from "framer-motion";
+
+import { MotionContainer, varBounce } from "../components/animate";
 
 // ----------------------------------------------------------------------
 

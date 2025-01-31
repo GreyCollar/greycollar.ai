@@ -1,13 +1,11 @@
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
+import PropTypes from "prop-types";
 import Typography from "@mui/material/Typography";
-import { styled, useTheme } from "@mui/material/styles";
-
 import { bgBlur } from "src/theme/css";
 
 import { LeftIcon, RightIcon } from "./arrow-icons";
+import { styled, useTheme } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 

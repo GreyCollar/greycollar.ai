@@ -1,9 +1,7 @@
-import PropTypes from "prop-types";
-
-import Stack from "@mui/material/Stack";
 import Container from "@mui/material/Container";
-
 import Header from "../common/header-simple";
+import PropTypes from "prop-types";
+import Stack from "@mui/material/Stack";
 
 // ----------------------------------------------------------------------
 

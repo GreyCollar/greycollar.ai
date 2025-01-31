@@ -1,10 +1,8 @@
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
-
-import Header from "./header";
 import Footer from "./footer";
 import { HEADER } from "../config-layout";
+import Header from "./header";
+import PropTypes from "prop-types";
 
 // ----------------------------------------------------------------------
 

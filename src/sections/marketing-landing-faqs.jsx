@@ -1,21 +1,18 @@
-import { useState, useCallback } from "react";
-
-import Stack from "@mui/material/Stack";
 import Accordion from "@mui/material/Accordion";
+import AccordionDetails from "@mui/material/AccordionDetails";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Unstable_Grid2";
+import Iconify from "src/components/iconify";
+import Image from "src/components/image";
+import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import AccordionDetails from "@mui/material/AccordionDetails";
+import { _faqs } from "src/_mock";
+import { useResponsive } from "src/hooks/use-responsive";
+
 import AccordionSummary, {
   accordionSummaryClasses,
 } from "@mui/material/AccordionSummary";
-
-import { useResponsive } from "src/hooks/use-responsive";
-
-import { _faqs } from "src/_mock";
-
-import Image from "src/components/image";
-import Iconify from "src/components/iconify";
+import { useCallback, useState } from "react";
 
 // ----------------------------------------------------------------------
 

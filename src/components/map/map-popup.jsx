@@ -1,14 +1,12 @@
-import PropTypes from "prop-types";
-import { useCallback } from "react";
-
 import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
-import Stack from "@mui/material/Stack";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-
-import Image from "src/components/image";
 import Iconify from "src/components/iconify";
+import Image from "src/components/image";
+import Paper from "@mui/material/Paper";
+import PropTypes from "prop-types";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import { useCallback } from "react";
 
 // ----------------------------------------------------------------------
 

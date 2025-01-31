@@ -1,16 +1,15 @@
-import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
 import Badge from "@mui/material/Badge";
-import Drawer from "@mui/material/Drawer";
-import Tooltip from "@mui/material/Tooltip";
-import Divider from "@mui/material/Divider";
-import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-
-import Iconify from "../../iconify";
-import Scrollbar from "../../scrollbar";
 import BaseOptions from "./base-options";
+import Box from "@mui/material/Box";
+import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
+import IconButton from "@mui/material/IconButton";
+import Iconify from "../../iconify";
 import PresetsOptions from "./presets-options";
+import Scrollbar from "../../scrollbar";
+import Stack from "@mui/material/Stack";
+import Tooltip from "@mui/material/Tooltip";
+import Typography from "@mui/material/Typography";
 import { useSettingsContext } from "../context";
 
 // ----------------------------------------------------------------------
