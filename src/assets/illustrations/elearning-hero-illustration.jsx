@@ -1,18 +1,16 @@
-import { memo } from "react";
-import { m } from "framer-motion";
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import { alpha, useTheme } from "@mui/material/styles";
-
-import Image from "src/components/image";
-
 import Icon from "./pattern/icon";
+import Image from "src/components/image";
 import Label from "./pattern/label";
-import Shape from "./pattern/shape";
 import Pattern01 from "./pattern/pattern-01";
 import Pattern02 from "./pattern/pattern-02";
+import PropTypes from "prop-types";
+import Shape from "./pattern/shape";
+import Typography from "@mui/material/Typography";
+import { m } from "framer-motion";
+import { memo } from "react";
+
+import { alpha, useTheme } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 

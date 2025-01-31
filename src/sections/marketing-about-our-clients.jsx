@@ -1,11 +1,9 @@
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-
 import Image from "src/components/image";
+import PropTypes from "prop-types";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
 
 // ----------------------------------------------------------------------
 

@@ -1,18 +1,16 @@
-import PropTypes from "prop-types";
-import { useRef, useState, useEffect, useCallback } from "react";
-
-import Masonry from "@mui/lab/Masonry";
-import Paper from "@mui/material/Paper";
-import Stack from "@mui/material/Stack";
 import Divider from "@mui/material/Divider";
-
-import { usePathname, useActiveLink } from "src/routes/hooks";
-
-import NavItem from "./nav-item";
-import MenuTags from "../common/menu-tags";
-import NavSubList from "../common/nav-sub-list";
-import MenuProducts from "../common/menu-products";
+import Masonry from "@mui/lab/Masonry";
 import MenuMoreLink from "../common/menu-more-link";
+import MenuProducts from "../common/menu-products";
+import MenuTags from "../common/menu-tags";
+import NavItem from "./nav-item";
+import NavSubList from "../common/nav-sub-list";
+import Paper from "@mui/material/Paper";
+import PropTypes from "prop-types";
+import Stack from "@mui/material/Stack";
+
+import { useActiveLink, usePathname } from "src/routes/hooks";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 // ----------------------------------------------------------------------
 

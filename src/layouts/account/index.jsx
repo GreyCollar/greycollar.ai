@@ -1,17 +1,13 @@
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
+import Iconify from "src/components/iconify";
+import Nav from "./nav";
+import PropTypes from "prop-types";
+import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-
 import { useBoolean } from "src/hooks/use-boolean";
 import { useResponsive } from "src/hooks/use-responsive";
-
-import Iconify from "src/components/iconify";
-
-import Nav from "./nav";
 
 // ----------------------------------------------------------------------
 

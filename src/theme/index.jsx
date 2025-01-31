@@ -1,21 +1,19 @@
-import { useMemo } from "react";
-import PropTypes from "prop-types";
-
 import CssBaseline from "@mui/material/CssBaseline";
-import {
-  createTheme,
-  ThemeProvider as MuiThemeProvider,
-} from "@mui/material/styles";
-
-import { useSettingsContext } from "src/components/settings";
-
+import PropTypes from "prop-types";
+import RTL from "./options/right-to-left";
+import { componentsOverrides } from "./overrides";
+import { createPresets } from "./options/presets";
+import { customShadows } from "./custom-shadows";
 import { palette } from "./palette";
 import { shadows } from "./shadows";
 import { typography } from "./typography";
-import RTL from "./options/right-to-left";
-import { customShadows } from "./custom-shadows";
-import { createPresets } from "./options/presets";
-import { componentsOverrides } from "./overrides";
+import { useMemo } from "react";
+import { useSettingsContext } from "src/components/settings";
+
+import {
+  ThemeProvider as MuiThemeProvider,
+  createTheme,
+} from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 

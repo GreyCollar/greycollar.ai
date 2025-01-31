@@ -1,7 +1,6 @@
-import PropTypes from "prop-types";
-
-import Stack from "@mui/material/Stack";
 import Avatar from "@mui/material/Avatar";
+import PropTypes from "prop-types";
+import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
 
 // ----------------------------------------------------------------------

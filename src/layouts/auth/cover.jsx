@@ -1,13 +1,11 @@
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
+import Image from "src/components/image";
+import PropTypes from "prop-types";
 import Typography from "@mui/material/Typography";
-import { alpha, useTheme } from "@mui/material/styles";
-
 import { useResponsive } from "src/hooks/use-responsive";
 
-import Image from "src/components/image";
-import Carousel, { useCarousel, CarouselDots } from "src/components/carousel";
+import Carousel, { CarouselDots, useCarousel } from "src/components/carousel";
+import { alpha, useTheme } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 

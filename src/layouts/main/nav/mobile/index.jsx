@@ -1,20 +1,15 @@
-import { useEffect } from "react";
-import PropTypes from "prop-types";
-
-import List from "@mui/material/List";
 import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-
-import { usePathname } from "src/routes/hooks";
-
-import { useBoolean } from "src/hooks/use-boolean";
-
-import Logo from "src/components/logo";
 import Iconify from "src/components/iconify";
-import Scrollbar from "src/components/scrollbar";
-
-import NavList from "./nav-list";
+import List from "@mui/material/List";
+import Logo from "src/components/logo";
 import { NAV } from "../../../config-layout";
+import NavList from "./nav-list";
+import PropTypes from "prop-types";
+import Scrollbar from "src/components/scrollbar";
+import { useBoolean } from "src/hooks/use-boolean";
+import { useEffect } from "react";
+import { usePathname } from "src/routes/hooks";
 
 // ----------------------------------------------------------------------
 

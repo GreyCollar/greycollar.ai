@@ -1,18 +1,15 @@
-import PropTypes from "prop-types";
-
-import Slide from "@mui/material/Slide";
-import Input from "@mui/material/Input";
 import Button from "@mui/material/Button";
-import IconButton from "@mui/material/IconButton";
-import { alpha, styled } from "@mui/material/styles";
-import InputAdornment from "@mui/material/InputAdornment";
 import ClickAwayListener from "@mui/material/ClickAwayListener";
-
+import { HEADER } from "../config-layout";
+import IconButton from "@mui/material/IconButton";
+import Iconify from "src/components/iconify";
+import Input from "@mui/material/Input";
+import InputAdornment from "@mui/material/InputAdornment";
+import PropTypes from "prop-types";
+import Slide from "@mui/material/Slide";
 import { useBoolean } from "src/hooks/use-boolean";
 
-import Iconify from "src/components/iconify";
-
-import { HEADER } from "../config-layout";
+import { alpha, styled } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 

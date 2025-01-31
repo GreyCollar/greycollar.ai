@@ -1,15 +1,14 @@
-import Link from "@mui/material/Link";
-import Stack from "@mui/material/Stack";
+import Container from "@mui/material/Container";
 import Divider from "@mui/material/Divider";
 import Grid from "@mui/material/Unstable_Grid2";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
 import IconButton from "@mui/material/IconButton";
-
-import { _socials, _caseStudies } from "src/_mock";
-
 import Iconify from "../components/iconify";
+import Link from "@mui/material/Link";
 import Markdown from "../components/markdown/markdown";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+
+import { _caseStudies, _socials } from "src/_mock";
 
 const _mockCaseStudy = _caseStudies[0];
 const { title, description, website } = _caseStudies[0];
@@ -60,7 +59,7 @@ export default function MarketingCaseStudyDetails() {
             <Stack direction="row" alignItems="center" spacing={0.5}>
               <Stack direction="row">
                 {_socials.map((social) => (
-                  <Link href={social.url}>
+                  <Link key={social.value} href={social.url}>
                     <IconButton key={social.value}>
                       <Iconify
                         icon={social.icon}

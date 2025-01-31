@@ -1,16 +1,15 @@
-import PropTypes from "prop-types";
-import Zoom from "yet-another-react-lightbox/plugins/zoom";
-import Video from "yet-another-react-lightbox/plugins/video";
-import Captions from "yet-another-react-lightbox/plugins/captions";
-import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
-import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
-import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
-import ReactLightbox, { useLightboxState } from "yet-another-react-lightbox";
-
 import Box from "@mui/material/Box";
-
+import Captions from "yet-another-react-lightbox/plugins/captions";
+import Fullscreen from "yet-another-react-lightbox/plugins/fullscreen";
 import Iconify from "../iconify";
+import PropTypes from "prop-types";
+import Slideshow from "yet-another-react-lightbox/plugins/slideshow";
 import StyledLightbox from "./styles";
+import Thumbnails from "yet-another-react-lightbox/plugins/thumbnails";
+import Video from "yet-another-react-lightbox/plugins/video";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
+
+import ReactLightbox, { useLightboxState } from "yet-another-react-lightbox";
 
 // ----------------------------------------------------------------------
 

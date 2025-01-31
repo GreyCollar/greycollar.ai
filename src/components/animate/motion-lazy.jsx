@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { m, domMax, LazyMotion } from "framer-motion";
+import { LazyMotion, domMax, m } from "framer-motion";
 
 // ----------------------------------------------------------------------
 

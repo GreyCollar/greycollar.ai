@@ -1,18 +1,16 @@
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
-import Grid from "@mui/material/Unstable_Grid2";
 import Container from "@mui/material/Container";
+import Grid from "@mui/material/Unstable_Grid2";
+import PropTypes from "prop-types";
+import Stack from "@mui/material/Stack";
+import TestimonialItem from "./marketing-testimonial-item";
 import Typography from "@mui/material/Typography";
 
 import Carousel, {
-  useCarousel,
-  CarouselDots,
   CarouselArrows,
+  CarouselDots,
+  useCarousel,
 } from "src/components/carousel";
-
-import TestimonialItem from "./marketing-testimonial-item";
 
 // ----------------------------------------------------------------------
 

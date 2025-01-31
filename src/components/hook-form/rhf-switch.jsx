@@ -1,9 +1,9 @@
-import PropTypes from "prop-types";
-import { Controller, useFormContext } from "react-hook-form";
-
-import Switch from "@mui/material/Switch";
-import FormHelperText from "@mui/material/FormHelperText";
 import FormControlLabel from "@mui/material/FormControlLabel";
+import FormHelperText from "@mui/material/FormHelperText";
+import PropTypes from "prop-types";
+import Switch from "@mui/material/Switch";
+
+import { Controller, useFormContext } from "react-hook-form";
 
 // ----------------------------------------------------------------------
 

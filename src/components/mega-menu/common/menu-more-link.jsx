@@ -1,10 +1,7 @@
-import PropTypes from "prop-types";
-
-import Link from "@mui/material/Link";
-
-import { RouterLink } from "src/routes/components";
-
 import Iconify from "../../iconify";
+import Link from "@mui/material/Link";
+import PropTypes from "prop-types";
+import { RouterLink } from "src/routes/components";
 
 // ----------------------------------------------------------------------
 

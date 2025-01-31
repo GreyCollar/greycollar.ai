@@ -1,24 +1,21 @@
-import { m } from "framer-motion";
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
+import Container from "@mui/material/Container";
+import Grid from "@mui/material/Unstable_Grid2";
+import Iconify from "src/components/iconify";
+import Image from "src/components/image";
 import Link from "@mui/material/Link";
 import Paper from "@mui/material/Paper";
-import Stack from "@mui/material/Stack";
-import Button from "@mui/material/Button";
-import Grid from "@mui/material/Unstable_Grid2";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import { alpha, useTheme } from "@mui/material/styles";
-
-import { paths } from "src/routes/paths";
+import PropTypes from "prop-types";
 import { RouterLink } from "src/routes/components";
-
+import Stack from "@mui/material/Stack";
+import TextMaxLine from "src/components/text-max-line";
+import Typography from "@mui/material/Typography";
+import { m } from "framer-motion";
+import { paths } from "src/routes/paths";
 import { useResponsive } from "src/hooks/use-responsive";
 
-import Image from "src/components/image";
-import Iconify from "src/components/iconify";
-import TextMaxLine from "src/components/text-max-line";
+import { alpha, useTheme } from "@mui/material/styles";
 import { varHover, varTranHover } from "src/components/animate";
 
 // ----------------------------------------------------------------------

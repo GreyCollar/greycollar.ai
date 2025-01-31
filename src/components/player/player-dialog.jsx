@@ -1,14 +1,11 @@
-import PropTypes from "prop-types";
-
-import Dialog from "@mui/material/Dialog";
-import { alpha } from "@mui/material/styles";
-import IconButton from "@mui/material/IconButton";
 import CircularProgress from "@mui/material/CircularProgress";
-
-import { useBoolean } from "src/hooks/use-boolean";
-
+import Dialog from "@mui/material/Dialog";
+import IconButton from "@mui/material/IconButton";
 import Iconify from "../iconify";
+import PropTypes from "prop-types";
 import { StyledReactPlayer } from "./styles";
+import { alpha } from "@mui/material/styles";
+import { useBoolean } from "src/hooks/use-boolean";
 
 // ----------------------------------------------------------------------
 

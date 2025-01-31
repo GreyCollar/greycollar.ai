@@ -1,6 +1,6 @@
-import { grey, primary, secondary } from "src/theme/palette";
-
 import { alpha } from "@mui/material/styles";
+
+import { grey, primary, secondary } from "src/theme/palette";
 
 // ----------------------------------------------------------------------
 

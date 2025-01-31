@@ -1,8 +1,6 @@
-import React from "react";
-
 import Button from "@mui/material/Button";
-
 import Iconify from "src/components/iconify";
+import React from "react";
 
 const StarUsOnGithub = () => (
   <Button

@@ -1,25 +1,21 @@
-import { useRef } from "react";
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Unstable_Grid2";
+import MarketingTeamItem from "./marketing-team-item";
+import PropTypes from "prop-types";
+import Stack from "@mui/material/Stack";
 import Typography from "@mui/material/Typography";
-import { alpha, useTheme } from "@mui/material/styles";
-
-import { useResponsive } from "src/hooks/use-responsive";
-import { useBoundingClientRect } from "src/hooks/use-bounding-client-rect";
-
 import { bgGradient } from "src/theme/css";
+import { useBoundingClientRect } from "src/hooks/use-bounding-client-rect";
+import { useRef } from "react";
+import { useResponsive } from "src/hooks/use-responsive";
 
 import Carousel, {
-  useCarousel,
-  CarouselDots,
   CarouselArrows,
+  CarouselDots,
+  useCarousel,
 } from "src/components/carousel";
-
-import MarketingTeamItem from "./marketing-team-item";
+import { alpha, useTheme } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 

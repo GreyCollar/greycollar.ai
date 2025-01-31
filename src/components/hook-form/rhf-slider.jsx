@@ -1,8 +1,8 @@
-import PropTypes from "prop-types";
-import { Controller, useFormContext } from "react-hook-form";
-
-import Slider from "@mui/material/Slider";
 import FormHelperText from "@mui/material/FormHelperText";
+import PropTypes from "prop-types";
+import Slider from "@mui/material/Slider";
+
+import { Controller, useFormContext } from "react-hook-form";
 
 // ----------------------------------------------------------------------
 

@@ -1,7 +1,6 @@
-import PropTypes from "prop-types";
-
 import { AdapterDateFns } from "@mui/x-date-pickers/AdapterDateFns";
 import { LocalizationProvider as MuiLocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
+import PropTypes from "prop-types";
 
 // ----------------------------------------------------------------------
 
