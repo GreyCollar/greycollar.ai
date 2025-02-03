@@ -1,25 +1,20 @@
-import PropTypes from "prop-types";
-
-import Link from "@mui/material/Link";
-import Stack from "@mui/material/Stack";
-import Drawer from "@mui/material/Drawer";
 import Avatar from "@mui/material/Avatar";
 import Divider from "@mui/material/Divider";
-import { alpha } from "@mui/material/styles";
-import ListItemText from "@mui/material/ListItemText";
-import ListItemIcon from "@mui/material/ListItemIcon";
+import Drawer from "@mui/material/Drawer";
+import Iconify from "src/components/iconify";
+import Link from "@mui/material/Link";
 import ListItemButton from "@mui/material/ListItemButton";
-
+import ListItemIcon from "@mui/material/ListItemIcon";
+import ListItemText from "@mui/material/ListItemText";
+import PropTypes from "prop-types";
+import { RouterLink } from "src/routes/components";
+import Stack from "@mui/material/Stack";
+import TextMaxLine from "src/components/text-max-line";
+import { _mock } from "src/_mock";
+import { alpha } from "@mui/material/styles";
 import { paths } from "src/routes/paths";
 import { useActiveLink } from "src/routes/hooks";
-import { RouterLink } from "src/routes/components";
-
 import { useResponsive } from "src/hooks/use-responsive";
-
-import { _mock } from "src/_mock";
-
-import Iconify from "src/components/iconify";
-import TextMaxLine from "src/components/text-max-line";
 
 // ----------------------------------------------------------------------
 

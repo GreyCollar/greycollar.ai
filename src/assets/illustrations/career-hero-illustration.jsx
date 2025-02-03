@@ -1,20 +1,16 @@
-import { memo } from "react";
-import { m } from "framer-motion";
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
-import { useTheme } from "@mui/material/styles";
-
-import { useHoverParallax } from "src/hooks/use-hover-parallax";
-
-import Image from "src/components/image";
-import SvgColor from "src/components/svg-color";
-
-import Icon from "./pattern/icon";
-import Label from "./pattern/label";
 import Character from "./pattern/character";
-import Pattern02 from "./pattern/pattern-02";
+import Icon from "./pattern/icon";
+import Image from "src/components/image";
+import Label from "./pattern/label";
 import Pattern01 from "./pattern/pattern-01";
+import Pattern02 from "./pattern/pattern-02";
+import PropTypes from "prop-types";
+import SvgColor from "src/components/svg-color";
+import { m } from "framer-motion";
+import { memo } from "react";
+import { useHoverParallax } from "src/hooks/use-hover-parallax";
+import { useTheme } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 

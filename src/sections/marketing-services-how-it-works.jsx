@@ -1,17 +1,16 @@
 import Box from "@mui/material/Box";
-import Timeline from "@mui/lab/Timeline";
-import TimelineDot from "@mui/lab/TimelineDot";
 import Container from "@mui/material/Container";
-import TimelineItem from "@mui/lab/TimelineItem";
-import Typography from "@mui/material/Typography";
-import TimelineContent from "@mui/lab/TimelineContent";
-import { alpha, useTheme } from "@mui/material/styles";
+import Timeline from "@mui/lab/Timeline";
 import TimelineConnector from "@mui/lab/TimelineConnector";
+import TimelineContent from "@mui/lab/TimelineContent";
+import TimelineDot from "@mui/lab/TimelineDot";
+import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
-
+import Typography from "@mui/material/Typography";
+import { bgGradient } from "src/theme/css";
 import { useResponsive } from "src/hooks/use-responsive";
 
-import { bgGradient } from "src/theme/css";
+import { alpha, useTheme } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 

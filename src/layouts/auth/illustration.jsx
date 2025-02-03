@@ -1,14 +1,10 @@
-import PropTypes from "prop-types";
-
-import Stack from "@mui/material/Stack";
-import Grid from "@mui/material/Unstable_Grid2";
 import Container from "@mui/material/Container";
-
-import { useResponsive } from "src/hooks/use-responsive";
-
-import Image from "src/components/image";
-
+import Grid from "@mui/material/Unstable_Grid2";
 import Header from "../common/header-simple";
+import Image from "src/components/image";
+import PropTypes from "prop-types";
+import Stack from "@mui/material/Stack";
+import { useResponsive } from "src/hooks/use-responsive";
 
 // ----------------------------------------------------------------------
 

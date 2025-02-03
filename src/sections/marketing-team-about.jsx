@@ -1,10 +1,8 @@
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-
 import MarketingTeamItem from "./marketing-team-item";
+import PropTypes from "prop-types";
+import Typography from "@mui/material/Typography";
 
 // ----------------------------------------------------------------------
 

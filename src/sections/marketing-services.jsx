@@ -1,14 +1,12 @@
 import Box from "@mui/material/Box";
-import Stack from "@mui/material/Stack";
 import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Unstable_Grid2";
-import Typography from "@mui/material/Typography";
-
-import { paths } from "src/routes/paths";
-
-import Image from "src/components/image";
 import Iconify from "src/components/iconify";
+import Image from "src/components/image";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+import { paths } from "src/routes/paths";
 
 // ----------------------------------------------------------------------
 

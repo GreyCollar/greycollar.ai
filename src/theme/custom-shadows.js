@@ -1,14 +1,14 @@
 import { alpha } from "@mui/material/styles";
 
 import {
+  common,
+  error,
   grey,
   info,
-  error,
-  common,
   primary,
-  warning,
-  success,
   secondary,
+  success,
+  warning,
 } from "./palette";
 
 // ----------------------------------------------------------------------

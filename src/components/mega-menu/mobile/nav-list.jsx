@@ -1,22 +1,20 @@
-import PropTypes from "prop-types";
-import { useState, useEffect, useCallback } from "react";
-
 import Box from "@mui/material/Box";
-import List from "@mui/material/List";
-import Stack from "@mui/material/Stack";
-import Drawer from "@mui/material/Drawer";
 import Divider from "@mui/material/Divider";
+import Drawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
-import { alpha, useTheme } from "@mui/material/styles";
-import ListItemButton from "@mui/material/ListItemButton";
-
-import { RouterLink } from "src/routes/components";
-import { usePathname, useActiveLink } from "src/routes/hooks";
-
-import NavItem from "./nav-item";
 import Iconify from "../../iconify";
+import List from "@mui/material/List";
+import ListItemButton from "@mui/material/ListItemButton";
+import NavItem from "./nav-item";
+import PropTypes from "prop-types";
+import { RouterLink } from "src/routes/components";
 import Scrollbar from "../../scrollbar";
+import Stack from "@mui/material/Stack";
+import Typography from "@mui/material/Typography";
+
+import { alpha, useTheme } from "@mui/material/styles";
+import { useActiveLink, usePathname } from "src/routes/hooks";
+import { useCallback, useEffect, useState } from "react";
 
 // ----------------------------------------------------------------------
 

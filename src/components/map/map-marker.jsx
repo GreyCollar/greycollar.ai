@@ -1,13 +1,11 @@
-/* eslint-disable unused-imports/no-unused-vars */
-import PropTypes from "prop-types";
-import { useCallback } from "react";
-
 import Box from "@mui/material/Box";
+import PropTypes from "prop-types";
 import SvgIcon from "@mui/material/SvgIcon";
+import { useCallback } from "react";
 
 // ----------------------------------------------------------------------
 
-export default function MapMarker({ onOpen, lat, lng }) {
+export default function MapMarker({ onOpen }) {
   const handleOpen = useCallback(
     (event) => {
       event.stopPropagation();

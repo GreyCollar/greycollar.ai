@@ -1,13 +1,12 @@
-import { m } from "framer-motion";
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
-import Badge, { badgeClasses } from "@mui/material/Badge";
-
 import Iconify from "src/components/iconify";
-import { varHover } from "src/components/animate";
+import PropTypes from "prop-types";
+import { m } from "framer-motion";
 import { useSettingsContext } from "src/components/settings";
+import { varHover } from "src/components/animate";
+
+import Badge, { badgeClasses } from "@mui/material/Badge";
 
 // ----------------------------------------------------------------------
 

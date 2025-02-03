@@ -1,13 +1,11 @@
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
 import Card from "@mui/material/Card";
-import Stack from "@mui/material/Stack";
-import { alpha } from "@mui/material/styles";
 import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-
+import PropTypes from "prop-types";
+import Stack from "@mui/material/Stack";
 import SvgColor from "src/components/svg-color";
+import Typography from "@mui/material/Typography";
+import { alpha } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 

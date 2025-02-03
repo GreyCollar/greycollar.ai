@@ -1,12 +1,9 @@
-import { m } from "framer-motion";
-import PropTypes from "prop-types";
-
 import Box from "@mui/material/Box";
-import { useTheme } from "@mui/material/styles";
-
-import { bgBlur } from "src/theme/css";
-
 import Logo from "../logo";
+import PropTypes from "prop-types";
+import { bgBlur } from "src/theme/css";
+import { m } from "framer-motion";
+import { useTheme } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 

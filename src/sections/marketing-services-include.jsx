@@ -1,3 +1,7 @@
+import Iconify from "src/components/iconify";
+import styled from "styled-components";
+import tabsData from "./tabs.json";
+
 import {
   Box,
   Card,
@@ -9,10 +13,6 @@ import {
 } from "@mui/material";
 import React, { useEffect, useMemo, useState } from "react";
 import { Tree, TreeNode } from "react-organizational-chart";
-
-import Iconify from "src/components/iconify";
-import styled from "styled-components";
-import tabsData from "./tabs.json";
 
 const CONSTANTS = {
   LINE_COLORS: {

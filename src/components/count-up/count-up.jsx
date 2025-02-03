@@ -1,9 +1,8 @@
-import { useRef } from "react";
+import Box from "@mui/material/Box";
 import PropTypes from "prop-types";
 import ReactCountUp from "react-countup";
 import { useInView } from "framer-motion";
-
-import Box from "@mui/material/Box";
+import { useRef } from "react";
 
 // ----------------------------------------------------------------------
 

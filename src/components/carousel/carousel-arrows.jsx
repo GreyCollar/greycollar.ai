@@ -1,11 +1,11 @@
-import PropTypes from "prop-types";
-
-import Stack from "@mui/material/Stack";
 import IconButton from "@mui/material/IconButton";
-import { alpha, styled, useTheme } from "@mui/material/styles";
-//
+import PropTypes from "prop-types";
+import Stack from "@mui/material/Stack";
 
 import { LeftIcon, RightIcon } from "./arrow-icons";
+import { alpha, styled, useTheme } from "@mui/material/styles";
+
+//
 
 // ----------------------------------------------------------------------
 

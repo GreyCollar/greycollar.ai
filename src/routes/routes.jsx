@@ -1,8 +1,8 @@
-import { Navigate, Outlet, useRoutes } from "react-router-dom";
-import { Suspense, lazy } from "react";
-
 import MainLayout from "../layouts/main";
 import { SplashScreen } from "src/components/loading-screen";
+
+import { Navigate, Outlet, useRoutes } from "react-router-dom";
+import { Suspense, lazy } from "react";
 
 const Page404 = lazy(() => import("src/pages/404"));
 const Page500 = lazy(() => import("src/pages/500"));

@@ -1,14 +1,9 @@
-import PropTypes from "prop-types";
-
 import Collapse from "@mui/material/Collapse";
-
-import { useActiveLink } from "src/routes/hooks/use-active-link";
-
-import { useBoolean } from "src/hooks/use-boolean";
-
-import { NavSectionVertical } from "src/components/nav-section";
-
 import NavItem from "./nav-item";
+import { NavSectionVertical } from "src/components/nav-section";
+import PropTypes from "prop-types";
+import { useActiveLink } from "src/routes/hooks/use-active-link";
+import { useBoolean } from "src/hooks/use-boolean";
 
 // ----------------------------------------------------------------------
 

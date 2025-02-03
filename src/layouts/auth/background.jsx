@@ -1,11 +1,9 @@
+import Header from "../common/header-simple";
 import PropTypes from "prop-types";
-
 import Stack from "@mui/material/Stack";
-import { alpha, useTheme } from "@mui/material/styles";
-
 import { bgGradient } from "src/theme/css";
 
-import Header from "../common/header-simple";
+import { alpha, useTheme } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 

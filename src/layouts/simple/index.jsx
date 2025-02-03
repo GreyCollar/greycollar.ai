@@ -1,6 +1,5 @@
-import PropTypes from "prop-types";
-
 import Header from "../common/header-simple";
+import PropTypes from "prop-types";
 
 // ----------------------------------------------------------------------
 

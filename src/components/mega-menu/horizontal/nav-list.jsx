@@ -1,20 +1,17 @@
-import PropTypes from "prop-types";
-import { useRef, useState, useEffect, useCallback } from "react";
-
-import Masonry from "@mui/lab/Masonry";
-import Stack from "@mui/material/Stack";
-import Popover from "@mui/material/Popover";
 import Divider from "@mui/material/Divider";
-
-import { usePathname, useActiveLink } from "src/routes/hooks";
-
+import Masonry from "@mui/lab/Masonry";
+import MenuMoreLink from "../common/menu-more-link";
+import MenuProducts from "../common/menu-products";
+import MenuTags from "../common/menu-tags";
+import NavItem from "./nav-item";
+import NavSubList from "../common/nav-sub-list";
+import Popover from "@mui/material/Popover";
+import PropTypes from "prop-types";
+import Stack from "@mui/material/Stack";
 import { hideScroll } from "src/theme/css";
 
-import NavItem from "./nav-item";
-import MenuTags from "../common/menu-tags";
-import NavSubList from "../common/nav-sub-list";
-import MenuProducts from "../common/menu-products";
-import MenuMoreLink from "../common/menu-more-link";
+import { useActiveLink, usePathname } from "src/routes/hooks";
+import { useCallback, useEffect, useRef, useState } from "react";
 
 // ----------------------------------------------------------------------
 

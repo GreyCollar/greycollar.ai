@@ -1,9 +1,8 @@
-import PropTypes from "prop-types";
-
-import { useTheme } from "@mui/material/styles";
 import Container from "@mui/material/Container";
-
+import PropTypes from "prop-types";
 import SvgColor from "src/components/svg-color";
+import { useTheme } from "@mui/material/styles";
+
 import Carousel, { useCarousel } from "src/components/carousel";
 
 // ----------------------------------------------------------------------
