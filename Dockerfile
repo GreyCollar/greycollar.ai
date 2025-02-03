@@ -5,6 +5,6 @@ WORKDIR /app
 COPY dist dist
 COPY config.js config.mjs
 
-EXPOSE 3000
+EXPOSE 5173
 
-ENTRYPOINT npx @nucleoidai/http-server start
+ENTRYPOINT npx @nucleoidai/http-server start --port 5173
