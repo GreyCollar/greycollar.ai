@@ -1,0 +1,101 @@
+[
+  {
+    "title": "Sales",
+    "services": [
+      { "title": "Receive Lead", "icon": "logos:google-gmail", "index": 0 },
+      {
+        "title": "Lead Research",
+        "icon": "academicons:researcherid",
+        "index": 1
+      },
+      {
+        "title": "Personalized Outreach",
+        "icon": "skill-icons:linkedin",
+        "index": 2
+      },
+      {
+        "title": "Respond to Objections",
+        "icon": "skill-icons:linkedin",
+        "index": 3
+      },
+      { "title": "Confirm Meeting", "icon": "logos:google-meet", "index": 4 },
+      { "title": "Meet", "icon": "devicon:slack", "index": 5 }
+    ]
+  },
+  {
+    "title": "Support",
+    "services": [
+      {
+        "title": "Ticket Creation",
+        "icon": "academicons:researcherid",
+        "index": 0
+      },
+      {
+        "title": "Issue Analysis",
+        "icon": "logos:google-analytics",
+        "index": 1
+      },
+      {
+        "title": "Technical Support",
+        "icon": "skill-icons:github-dark",
+        "index": 2
+      },
+      { "title": "Problem Resolution", "icon": "logos:slack", "index": 3 },
+      { "title": "Follow-up", "icon": "logos:intercom", "index": 4 },
+      { "title": "Meet", "icon": "devicon:slack", "index": 5 }
+    ]
+  },
+  {
+    "title": "Research",
+    "services": [
+      { "title": "Data Collection", "icon": "logos:google-gmail", "index": 0 },
+      {
+        "title": "Market Analysis",
+        "icon": "logos:google-analytics",
+        "index": 1
+      },
+      {
+        "title": "Competitor Review",
+        "icon": "logos:google-search-console",
+        "index": 2
+      },
+      {
+        "title": "Insights Generation",
+        "icon": "skill-icons:figma-dark",
+        "index": 3
+      },
+      {
+        "title": "Report Creation",
+        "icon": "logos:google-analytics",
+        "index": 4
+      },
+      { "title": "Meet", "icon": "devicon:slack", "index": 5 }
+    ]
+  },
+  {
+    "title": "Marketing",
+    "services": [
+      { "title": "Campaign Planning", "icon": "logos:hubspot", "index": 0 },
+      {
+        "title": "Content Creation",
+        "icon": "logos:google-analytics",
+        "index": 1
+      },
+      { "title": "Social Media", "icon": "logos:twitter", "index": 2 },
+      { "title": "Analytics", "icon": "logos:google-analytics", "index": 3 },
+      { "title": "Optimization", "icon": "logos:google-analytics", "index": 4 },
+      { "title": "Meet", "icon": "devicon:slack", "index": 5 }
+    ]
+  },
+  {
+    "title": "Operations",
+    "services": [
+      { "title": "Process Setup", "icon": "logos:jira", "index": 0 },
+      { "title": "Team Training", "icon": "logos:udemy", "index": 1 },
+      { "title": "Quality Control", "icon": "logos:asana", "index": 2 },
+      { "title": "Performance Review", "icon": "logos:trello", "index": 3 },
+      { "title": "Process Update", "icon": "logos:notion", "index": 4 },
+      { "title": "Meet", "icon": "devicon:slack", "index": 5 }
+    ]
+  }
+]

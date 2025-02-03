@@ -1,7 +1,16 @@
 import Iconify from "src/components/iconify";
 import styled from "styled-components";
+import tabsData from "./tabs.json";
 
-import { Box, Card, Container, Grid, Typography } from "@mui/material";
+import {
+  Box,
+  Card,
+  Container,
+  Grid,
+  Tab,
+  Tabs,
+  Typography,
+} from "@mui/material";
 import React, { useEffect, useMemo, useState } from "react";
 import { Tree, TreeNode } from "react-organizational-chart";
 
@@ -12,14 +21,6 @@ const CONSTANTS = {
   },
   ANIMATION_INTERVAL: 2000,
 };
-
-const SERVICES = [
-  { title: "Receive Lead", icon: "logos:google-gmail", index: 0 },
-  { title: "Lead Research", icon: "academicons:researcherid", index: 1 },
-  { title: "Personalized outreach", icon: "skill-icons:linkedin", index: 2 },
-  { title: "Respond to objections", icon: "skill-icons:linkedin", index: 3 },
-  { title: "Confirm meeting", icon: "logos:google-meet", index: 4 },
-].map((service, index) => ({ ...service, id: `service-${index}` }));
 
 const StyledTreeNode = styled.div`
   display: flex;
@@ -65,6 +66,12 @@ const NodeTemplate = ({ nodeData }) => (
 export default function MarketingServicesInclude() {
   const [lineColor, setLineColor] = useState(CONSTANTS.LINE_COLORS.DEFAULT);
 
+  const [selectedTab, setSelectedTab] = useState(0);
+
+  const handleTabChange = (event, newValue) => {
+    setSelectedTab(newValue);
+  };
+
   useEffect(() => {
     const interval = setInterval(() => {
       setLineColor((prevColor) =>
@@ -78,27 +85,33 @@ export default function MarketingServicesInclude() {
   }, []);
 
   const treeData = useMemo(() => {
+    const currentServices = tabsData[selectedTab].services;
+
     const createNode = (index) => ({
-      ...SERVICES[index],
+      ...currentServices[index],
       children: [],
     });
 
     const finalNode = createNode(4);
-    const objectionsNode = createNode(3);
+    const meetNode = createNode(5);
+    const objectionsNode = {
+      ...createNode(3),
+      children: [meetNode],
+    };
     const outreachNode = {
       ...createNode(2),
-      children: [objectionsNode, finalNode],
+      children: [finalNode],
     };
-    const leadResearchNode = {
+    const secondNode = {
       ...createNode(1),
-      children: [outreachNode],
+      children: [outreachNode, objectionsNode],
     };
 
     return {
       ...createNode(0),
-      children: [leadResearchNode],
+      children: [secondNode],
     };
-  }, []);
+  }, [selectedTab]);
 
   const renderTree = useMemo(() => {
     const render = (node) => (
@@ -119,6 +132,39 @@ export default function MarketingServicesInclude() {
   return (
     <Container sx={{ pt: { xs: 5, md: 10 }, pb: { xs: 10, md: 15 } }}>
       <Grid container spacing={3}>
+        {/* Tabs */}
+        <Grid xs={12} md={12} sx={{ mb: 3 }}>
+          <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <Tabs
+              value={selectedTab}
+              onChange={handleTabChange}
+              centered
+              sx={{
+                "& .MuiTabs-indicator": {
+                  backgroundColor: "primary.main",
+                },
+              }}
+            >
+              {tabsData.map((tab, index) => (
+                <Tab
+                  key={index}
+                  label={tab.title}
+                  sx={{
+                    "&.Mui-selected": {
+                      color: "primary.main",
+                    },
+                    "&:hover": {
+                      color: "primary.main",
+                      opacity: 0.7,
+                    },
+                  }}
+                />
+              ))}
+            </Tabs>
+          </Box>
+        </Grid>
+
+        {/* Content */}
         <Grid xs={12} md={12}>
           <Typography variant="h4" sx={{ mb: 2, textAlign: "center" }}>
             Our Marketing Services
@@ -129,6 +175,7 @@ export default function MarketingServicesInclude() {
           </Typography>
         </Grid>
 
+        {/* Bg */}
         <Grid item xs={12} md={7}>
           <Box
             sx={{
@@ -144,6 +191,7 @@ export default function MarketingServicesInclude() {
           />
         </Grid>
 
+        {/* Tree */}
         <Grid item xs={12} md={5}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Tree
