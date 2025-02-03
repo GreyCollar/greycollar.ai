@@ -18,7 +18,8 @@
         "icon": "skill-icons:linkedin",
         "index": 3
       },
-      { "title": "Confirm Meeting", "icon": "logos:google-meet", "index": 4 }
+      { "title": "Confirm Meeting", "icon": "logos:google-meet", "index": 4 },
+      { "title": "Meet", "icon": "devicon:slack", "index": 5 }
     ]
   },
   {
@@ -40,7 +41,8 @@
         "index": 2
       },
       { "title": "Problem Resolution", "icon": "logos:slack", "index": 3 },
-      { "title": "Follow-up", "icon": "logos:intercom", "index": 4 }
+      { "title": "Follow-up", "icon": "logos:intercom", "index": 4 },
+      { "title": "Meet", "icon": "devicon:slack", "index": 5 }
     ]
   },
   {
@@ -66,7 +68,8 @@
         "title": "Report Creation",
         "icon": "logos:google-analytics",
         "index": 4
-      }
+      },
+      { "title": "Meet", "icon": "devicon:slack", "index": 5 }
     ]
   },
   {
@@ -80,7 +83,8 @@
       },
       { "title": "Social Media", "icon": "logos:twitter", "index": 2 },
       { "title": "Analytics", "icon": "logos:google-analytics", "index": 3 },
-      { "title": "Optimization", "icon": "logos:google-analytics", "index": 4 }
+      { "title": "Optimization", "icon": "logos:google-analytics", "index": 4 },
+      { "title": "Meet", "icon": "devicon:slack", "index": 5 }
     ]
   },
   {
@@ -90,7 +94,8 @@
       { "title": "Team Training", "icon": "logos:udemy", "index": 1 },
       { "title": "Quality Control", "icon": "logos:asana", "index": 2 },
       { "title": "Performance Review", "icon": "logos:trello", "index": 3 },
-      { "title": "Process Update", "icon": "logos:notion", "index": 4 }
+      { "title": "Process Update", "icon": "logos:notion", "index": 4 },
+      { "title": "Meet", "icon": "devicon:slack", "index": 5 }
     ]
   }
 ]
