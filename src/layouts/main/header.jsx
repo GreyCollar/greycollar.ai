@@ -1,5 +1,6 @@
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import { HEADER } from "../config-layout";
 import HeaderShadow from "../common/header-shadow";
@@ -53,6 +54,22 @@ export default function Header({ headerOnDark }) {
         justifyContent="flex-end"
       >
         <Stack spacing={1} direction="row" alignItems="center">
+          <Button
+            variant="contained"
+            onClick={() =>
+              window.location.assign("https://nucleoid.com/ide/chat")
+            }
+            sx={{
+              mx: 1,
+              color: "white",
+              textTransform: "none",
+              background:
+                "linear-gradient(135deg, rgba(0,141,114,1) 0%, rgba(32,153,88,1) 100%)",
+              display: { xs: "none", md: "block" },
+            }}
+          >
+            Go to Dashboard
+          </Button>
           <StarUsOnGithub />
         </Stack>
       </Stack>

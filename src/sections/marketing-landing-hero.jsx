@@ -1,7 +1,7 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Unstable_Grid2";
-import Iconify from "src/components/iconify";
+import Link from "@mui/material/Link";
 import Image from "src/components/image";
 import React from "react";
 import Typography from "@mui/material/Typography";
@@ -28,6 +28,7 @@ export default function MarketingLandingHero() {
         autoPlay
         muted
         playsInline
+        loop
         style={{
           position: "absolute",
           top: 0,
@@ -39,7 +40,7 @@ export default function MarketingLandingHero() {
         }}
       >
         <source
-          src="https://cdn.nucleoid.com/media/03f0f590-de87-4733-a66d-5c6476bef9dc.mp4"
+          src="/assets/048a1e78-e374-4237-839c-e0441a194c0d.mp4"
           type="video/mp4"
         />
       </video>
@@ -56,58 +57,35 @@ export default function MarketingLandingHero() {
       />
       <Container
         sx={{
-          mt: 8,
-          py: 15,
+          mt: 0,
           display: { md: "flex" },
           alignItems: { md: "center" },
+          justifyContent: { md: "center" },
           height: { md: `100vh` },
         }}
       >
-        <Grid container columnSpacing={{ xs: 0, md: 10 }}>
+        <Grid container>
           <Grid
             xs={12}
-            md={6}
-            lg={5}
+            md={12}
+            lg={12}
             sx={{
-              textAlign: { xs: "center", md: "left" },
+              textAlign: { xs: "center", md: "center" },
             }}
           >
             <Typography
-              fontSize={20}
-              fontWeight={100}
               variant="overline"
               sx={{ color: "secondary.main" }}
             >
-              <Iconify width={22} icon="ph:signature-light" />
-              &nbsp;Inspired by Nature
-            </Typography>
 
-            <Typography variant="h2" sx={{ my: 2 }}>
-              GreyCollar
+            </Typography>
+            <Typography fontSize={60}>
+              Your Supervised AI Colleague
+            </Typography>
+            <Typography sx={{ color: "text.secondary" }}>
+
             </Typography>
           </Grid>
-
-          {mdUp && (
-            <Grid xs={12} md={6} lg={7}>
-              <Image
-                visibleByDefault
-                disabledEffect
-                alt="marketing market"
-                src="https://cdn.nucleoid.com/media/6ccfe678-176b-4b5b-ae3c-0e506bdc94ba.png"
-                width={958}
-                height={615}
-                sx={{
-                  ml: {
-                    xs: "-50%",
-                    sm: "-50%",
-                    md: "-50%",
-                    lg: "-50%",
-                    xl: "-30%",
-                  },
-                }}
-              />
-            </Grid>
-          )}
         </Grid>
       </Container>
     </Box>

@@ -22,7 +22,7 @@ export default function MarketingLandingPage() {
   return (
     <>
       <Helmet>
-        <title>GreyCollar</title>
+        <title>GreyCollar - Supervised AI Agent</title>
       </Helmet>
 
       <MarketingLandingHero />

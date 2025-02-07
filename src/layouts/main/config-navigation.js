@@ -2,4 +2,7 @@
 
 export const pageLinks = [];
 
-export const navConfig = [{ title: "GreyCollar", path: "/" }];
+export const navConfig = [
+  { title: "AI Agent", path: "/" },
+  { title: "Enterprise", path: "/enterprise" },
+];
