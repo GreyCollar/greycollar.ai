@@ -1,8 +1,6 @@
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Unstable_Grid2";
-import Link from "@mui/material/Link";
-import Image from "src/components/image";
 import React from "react";
 import Typography from "@mui/material/Typography";
 import { useResponsive } from "src/hooks/use-responsive";
@@ -14,6 +12,7 @@ import { alpha, useTheme } from "@mui/material/styles";
 export default function MarketingLandingHero() {
   const theme = useTheme();
 
+  // eslint-disable-next-line no-unused-vars
   const mdUp = useResponsive("up", "md");
 
   return (
@@ -76,15 +75,9 @@ export default function MarketingLandingHero() {
             <Typography
               variant="overline"
               sx={{ color: "secondary.main" }}
-            >
-
-            </Typography>
-            <Typography fontSize={60}>
-              Your Supervised AI Colleague
-            </Typography>
-            <Typography sx={{ color: "text.secondary" }}>
-
-            </Typography>
+            ></Typography>
+            <Typography fontSize={60}>Your Supervised AI Colleague</Typography>
+            <Typography sx={{ color: "text.secondary" }}></Typography>
           </Grid>
         </Grid>
       </Container>
