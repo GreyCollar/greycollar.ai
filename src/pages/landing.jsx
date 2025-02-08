@@ -27,9 +27,9 @@ export default function MarketingLandingPage() {
 
       <MarketingLandingHero />
 
-      <MarketingServicesInclude />
-
       <Chat />
+
+      <MarketingServicesInclude />
 
       <MarketingServices />
 
