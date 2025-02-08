@@ -39,7 +39,7 @@ export default function MarketingLandingHero() {
         }}
       >
         <source
-          src="/assets/048a1e78-e374-4237-839c-e0441a194c0d.mp4"
+          src="/assets/8664fe9b-3b50-4154-9994-7ea7288dfcbb.mp4"
           type="video/mp4"
         />
       </video>
@@ -50,7 +50,7 @@ export default function MarketingLandingHero() {
           left: 0,
           width: "100%",
           height: "100%",
-          backgroundColor: alpha(theme.palette.background.default, 0.9),
+          backgroundColor: alpha(theme.palette.background.default, 0.7),
           zIndex: -1,
         }}
       />
@@ -76,7 +76,12 @@ export default function MarketingLandingHero() {
               variant="overline"
               sx={{ color: "secondary.main" }}
             ></Typography>
-            <Typography fontSize={60}>Your Supervised AI Colleague</Typography>
+            <Typography
+              fontSize={60}
+              sx={{ textShadow: "4px 4px 6px rgba(0,0,0,1)" }}
+            >
+              Your Supervised AI Colleague
+            </Typography>
             <Typography sx={{ color: "text.secondary" }}></Typography>
           </Grid>
         </Grid>
