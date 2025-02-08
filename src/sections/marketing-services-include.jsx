@@ -164,17 +164,6 @@ export default function MarketingServicesInclude() {
           </Box>
         </Grid>
 
-        {/* Content */}
-        <Grid xs={12} md={12}>
-          <Typography variant="h4" sx={{ mb: 2, textAlign: "center" }}>
-            Our Marketing Services
-          </Typography>
-          <Typography variant="body2" sx={{ textAlign: "center" }}>
-            Work every lead and scale your sales activity. Automate your sales
-            process and turn leads into customers on autopilot.
-          </Typography>
-        </Grid>
-
         {/* Bg */}
         <Grid item xs={12} md={7}>
           <Box
