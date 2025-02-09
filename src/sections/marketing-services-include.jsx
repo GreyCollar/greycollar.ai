@@ -169,13 +169,10 @@ export default function MarketingServicesInclude() {
           <Box
             sx={{
               textAlign: "center",
-              mb: 6,
-              backgroundImage: "url(/assets/mark.png)",
+              backgroundImage: "url(/assets/Illustration_1.png)",
               backgroundSize: "cover",
               backgroundRepeat: "no-repeat",
-              backgroundPosition: "center",
-              height: { xs: 500, md: "100%" },
-              width: "100%",
+              height: 400,
             }}
           />
         </Grid>
