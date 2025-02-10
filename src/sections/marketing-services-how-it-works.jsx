@@ -116,7 +116,7 @@ export default function MarketingServicesHowItWorks() {
           {TIMELINES.map((value, index) => (
             <TimelineItem
               key={value.title}
-              position={value.direction}
+              position={mdUp ? value.direction : "right"}
               sx={{
                 "&:before": {
                   ...(!mdUp && { display: "none" }),
@@ -129,8 +129,13 @@ export default function MarketingServicesHowItWorks() {
               </TimelineSeparator>
 
               <TimelineContent sx={{ pb: { xs: 3, md: 5 } }}>
-                <Typography color="gray">{value.prompt}</Typography>
-                <Typography>
+                <Typography
+                  color="gray"
+                  sx={{ fontSize: { xs: "0.75rem", md: "1rem" } }}
+                >
+                  {value.prompt}
+                </Typography>
+                <Typography sx={{ fontSize: { xs: "0.75rem", md: "1rem" } }}>
                   <pre>
                     <code>{value.code}</code>
                   </pre>
