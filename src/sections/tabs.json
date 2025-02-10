@@ -1,7 +1,7 @@
 [
   {
     "title": "Sales",
-    "bgImage": "/assets/mark.png",
+    "bgImage": "/assets/Illustration_1.png",
     "description": "Maximize your sales potential with a structured and automated workflow. Capture, research, and engage leads with personalized outreach while seamlessly handling objections. Turn prospects into customers with data-driven strategies, automated follow-ups, and well-planned meetings. Scale your sales activity effortlessly and close more deals with efficiency.",
     "services": [
       { "title": "Receive Lead", "icon": "logos:google-gmail", "index": 0 },
@@ -14,7 +14,7 @@
   },
   {
     "title": "Support",
-    "bgImage": "/assets/Illustration_1.png",
+    "bgImage": "/assets/Illustration_2.png",
     "description": "Deliver exceptional customer support with a streamlined workflow that ensures every issue is addressed efficiently. From ticket creation to issue resolution, provide timely assistance and technical support. Foster strong customer relationships with proactive follow-ups, keeping clients engaged and satisfied. Elevate your support game with automation and smart communication tools.",
     "services": [
       { "title": "Ticket Creation", "icon": "academicons:researcherid", "index": 0 },
@@ -27,7 +27,7 @@
   },
   {
     "title": "Research",
-    "bgImage": "/assets/Illustration_2.png",
+    "bgImage": "/assets/Illustration_3.png",
     "description": "Stay ahead of the competition with in-depth research and data analysis. Collect and analyze market trends, competitor strategies, and customer behaviors to make informed decisions. Gain valuable insights through structured reports and transform raw data into actionable intelligence that drives business growth and innovation.",
     "services": [
       { "title": "Data Collection", "icon": "logos:google-gmail", "index": 0 },
@@ -40,7 +40,7 @@
   },
   {
     "title": "Marketing",
-    "bgImage": "/assets/Illustration_3.png",
+    "bgImage": "/assets/Illustration_4.png",
     "description": "Amplify your brand presence and drive engagement with strategic marketing campaigns. Plan, create, and distribute high-impact content across multiple channels, leveraging analytics to optimize performance. Utilize social media, SEO, and targeted outreach to increase visibility, generate leads, and convert prospects into loyal customers.",
     "services": [
       { "title": "Campaign Planning", "icon": "logos:hubspot", "index": 0 },
@@ -53,7 +53,7 @@
   },
   {
     "title": "Operations",
-    "bgImage": "/assets/Illustration_4.png",
+    "bgImage": "/assets/Illustration_5.png",
     "description": "Ensure smooth and efficient operations with a well-structured workflow. Set up processes, train teams, and monitor quality control to maintain high performance. Regular performance reviews and continuous process improvements help optimize workflows, enhance productivity, and drive long-term business success.",
     "services": [
       { "title": "Process Setup", "icon": "logos:jira", "index": 0 },

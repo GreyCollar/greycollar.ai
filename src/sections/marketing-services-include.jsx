@@ -66,7 +66,7 @@ const NodeTemplate = ({ nodeData }) => (
 export default function MarketingServicesInclude() {
   const [lineColor, setLineColor] = useState(CONSTANTS.LINE_COLORS.DEFAULT);
   const [selectedTab, setSelectedTab] = useState(0);
-  const [bgImage, setBgImage] = useState("/assets/mark.png");
+  const [bgImage, setBgImage] = useState("/assets/Illustration_1.png");
 
   const handleTabChange = (event, newValue) => {
     setSelectedTab(newValue);
