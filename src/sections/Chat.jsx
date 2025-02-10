@@ -1,6 +1,7 @@
 import Container from "@mui/material/Container";
 import React from "react";
 import { useResponsive } from "../hooks/use-responsive";
+
 import { Button, Grid } from "@mui/material";
 
 // ----------------------------------------------------------------------
@@ -22,7 +23,7 @@ export default function Chat() {
           <div
             style={{
               width: "100%",
-              maxWidth: 820, // Adjust for borders
+              maxWidth: 820,
               borderRadius: "8px",
               overflow: "hidden",
               border: "1px solid #222",
@@ -81,7 +82,7 @@ export default function Chat() {
               muted
               style={{
                 display: "block",
-                width: "800px",
+                width: "100%",
                 height: "auto",
                 borderColor: "#222",
                 borderStyle: "solid",
