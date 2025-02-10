@@ -65,11 +65,12 @@ const NodeTemplate = ({ nodeData }) => (
 
 export default function MarketingServicesInclude() {
   const [lineColor, setLineColor] = useState(CONSTANTS.LINE_COLORS.DEFAULT);
-
   const [selectedTab, setSelectedTab] = useState(0);
+  const [bgImage, setBgImage] = useState("/assets/mark.png");
 
   const handleTabChange = (event, newValue) => {
     setSelectedTab(newValue);
+    setBgImage(tabsData[newValue].bgImage);
   };
 
   useEffect(() => {
@@ -131,7 +132,7 @@ export default function MarketingServicesInclude() {
 
   return (
     <Container sx={{ pt: { xs: 5, md: 10 }, pb: { xs: 10, md: 15 } }}>
-      <Grid container spacing={3}>
+      <Grid container>
         {/* Tabs */}
         <Grid xs={12} md={12} sx={{ mb: 3 }}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
@@ -164,24 +165,34 @@ export default function MarketingServicesInclude() {
           </Box>
         </Grid>
 
-        {/* Bg */}
-        <Grid item xs={12} md={7}>
+        {/* Bg and content*/}
+        <Grid item xs={12} md={8}>
+          <Box sx={{ mt: 2, width: 550, ml: { xs: 0, md: 28 } }}>
+            <Typography variant="h4" sx={{ textAlign: "start", mb: 1 }}>
+              {tabsData[selectedTab].title}
+            </Typography>
+            <Typography variant="body2" sx={{ textAlign: "justify" }}>
+              {tabsData[selectedTab].description}
+            </Typography>
+          </Box>
           <Box
             sx={{
               textAlign: "center",
-              mb: 6,
-              backgroundImage: "url(/assets/mark.png)",
-              backgroundSize: "cover",
+              mt: 5,
+
+              mb: { xs: 5 },
+              backgroundImage: `url(${bgImage})`,
+              backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
               backgroundPosition: "center",
-              height: { xs: 500, md: "100%" },
+              height: 300,
               width: "100%",
             }}
           />
         </Grid>
 
         {/* Tree */}
-        <Grid item xs={12} md={5}>
+        <Grid item xs={12} md={4}>
           <Box sx={{ display: "flex", justifyContent: "center" }}>
             <Tree
               lineWidth="2px"
