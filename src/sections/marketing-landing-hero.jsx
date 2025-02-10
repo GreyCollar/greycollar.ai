@@ -70,6 +70,7 @@ export default function MarketingLandingHero() {
             md={12}
             lg={12}
             sx={{
+              mt: -4,
               textAlign: { xs: "center", md: "center" },
             }}
           >
