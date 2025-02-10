@@ -28,6 +28,7 @@ export default function MarketingLandingHero() {
         muted
         playsInline
         preload="auto"
+        poster="https://cdn.nucleoid.com/media/60d6f6fa-cd94-4a0d-9ecc-764bdea35f84.png"
         style={{
           position: "absolute",
           top: 0,
@@ -39,7 +40,7 @@ export default function MarketingLandingHero() {
         }}
       >
         <source
-          src="/assets/9f769133-162a-49ef-8987-bced5828b24e.mp4"
+          src="http://cdn.nucleoid.com/media/d5709f50-75cf-445c-b990-729f95199fcb.mp4"
           type="video/mp4"
         />
       </video>
