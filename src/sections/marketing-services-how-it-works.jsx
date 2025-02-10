@@ -16,37 +16,50 @@ import { alpha, useTheme } from "@mui/material/styles";
 
 const TIMELINES = [
   {
-    prompt: '"Define human with a name"',
+    prompt: '"Do you have a parking spot at your store?"',
+    code:
+      "> SESSION.USER_MESSAGED                 \n" +
+      "{                                     \n" +
+      'sessionId: "2116847c",              \n' +
+      'content: "Do you ... at your store?"\n' +
+      "}                                     \n",
+    direction: "left",
   },
   {
-    prompt: "Human is defined in the context.",
-    code:
-      "> class Human {\n" +
-      "    constructor(name) {\n" +
-      "      this.name = name;\n" +
-      "    }\n" +
-      "  }",
+    prompt: "Please wait a moment while working on the answer.",
+    direction: "right",
+    code: `> SUPERVISING.RAISED
+  {
+    sessionId: "2116847c",
+    question: "Do you ... at your store?"
+  }`,
   },
   {
     prompt: '"All humans are mortal"',
+    direction: "right",
   },
   {
     prompt: "Mortality is defined for humans.",
     code: "> $Human.mortal = true",
+    direction: "left",
   },
   {
     prompt: '"Socrates is a human"',
+    direction: "right",
   },
   {
     prompt: "Socrates is created as a human.",
     code: "> socrates = new Human('Socrates')",
+    direction: "left",
   },
   {
     prompt: '"Is Socrates mortal?"',
+    direction: "right",
   },
   {
     prompt: "Confirmed that Socrates is mortal",
     code: "> socrates.mortal === true\ntrue",
+    direction: "right",
   },
 ];
 
@@ -72,7 +85,7 @@ export default function MarketingServicesHowItWorks() {
     >
       <Container>
         <Typography variant="h2" sx={{ textAlign: "center" }}>
-          How It Works
+          Event-driven AI Agent Platform
         </Typography>
         <Typography
           sx={{
@@ -84,7 +97,8 @@ export default function MarketingServicesHowItWorks() {
           }}
           fontSize={22}
         >
-          Socrates&apos;s syllogism
+          &quot;AI without own-generated flow is not AI agent, but still need a
+          platform to do it&quot;
         </Typography>
         <Typography
           sx={{
@@ -95,16 +109,14 @@ export default function MarketingServicesHowItWorks() {
             mb: { xs: 8, md: 10 },
           }}
         >
-          <i>
-            &quot;All humans are mortal. Socrates is a human. Therefore,
-            Socrates is mortal.&quot;
-          </i>
+          <i>btw, probably Skynet was event-driven too</i> 😬
         </Typography>
 
         <Timeline position={mdUp ? "alternate-reverse" : "right"}>
           {TIMELINES.map((value, index) => (
             <TimelineItem
               key={value.title}
+              position={value.direction}
               sx={{
                 "&:before": {
                   ...(!mdUp && { display: "none" }),
@@ -117,17 +129,12 @@ export default function MarketingServicesHowItWorks() {
               </TimelineSeparator>
 
               <TimelineContent sx={{ pb: { xs: 3, md: 5 } }}>
-                {!(index % 2) && <Typography>{value.prompt}</Typography>}
-                {!!(index % 2) && (
-                  <>
-                    <Typography color="gray">{value.prompt}</Typography>
-                    <Typography>
-                      <pre>
-                        <code>{value.code}</code>
-                      </pre>
-                    </Typography>
-                  </>
-                )}
+                <Typography color="gray">{value.prompt}</Typography>
+                <Typography>
+                  <pre>
+                    <code>{value.code}</code>
+                  </pre>
+                </Typography>
               </TimelineContent>
             </TimelineItem>
           ))}

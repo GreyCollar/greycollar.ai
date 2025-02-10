@@ -27,7 +27,7 @@ export default function MarketingLandingHero() {
         autoPlay
         muted
         playsInline
-        loop
+        preload="auto"
         style={{
           position: "absolute",
           top: 0,
@@ -39,7 +39,7 @@ export default function MarketingLandingHero() {
         }}
       >
         <source
-          src="/assets/8664fe9b-3b50-4154-9994-7ea7288dfcbb.mp4"
+          src="/assets/9f769133-162a-49ef-8987-bced5828b24e.mp4"
           type="video/mp4"
         />
       </video>
