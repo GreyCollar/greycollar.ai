@@ -38,6 +38,7 @@ export default function MarketingServices() {
             src="/assets/images/marketing/297fde45-b543-4b00-96bf-9f02950db079.png"
             sx={{
               borderRadius: 2,
+              width: "100%",
             }}
           />
         </Grid>
