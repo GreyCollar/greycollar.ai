@@ -86,7 +86,7 @@ export default function MarketingLandingHero() {
               }}
             >
               <Typography
-                fontSize={{ xs: 20, sm: 40, md: 60 }}
+                fontSize={60}
                 sx={{ textShadow: "4px 4px 6px rgba(0,0,0,1)" }}
               >
                 Your Supervised AI Colleague
