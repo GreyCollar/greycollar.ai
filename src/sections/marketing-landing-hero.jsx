@@ -76,12 +76,21 @@ export default function MarketingLandingHero() {
               variant="overline"
               sx={{ color: "secondary.main" }}
             ></Typography>
-            <Typography
-              fontSize={60}
-              sx={{ textShadow: "4px 4px 6px rgba(0,0,0,1)" }}
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+                height: "100vh",
+              }}
             >
-              Your Supervised AI Colleague
-            </Typography>
+              <Typography
+                fontSize={{ xs: 20, sm: 40, md: 60 }}
+                sx={{ textShadow: "4px 4px 6px rgba(0,0,0,1)" }}
+              >
+                Your Supervised AI Colleague
+              </Typography>
+            </Box>
             <Typography sx={{ color: "text.secondary" }}></Typography>
           </Grid>
         </Grid>
