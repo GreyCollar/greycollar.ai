@@ -49,7 +49,12 @@ export default function MarketingCaseStudyDetails() {
                 Website
               </Typography>
 
-              <Link variant="body2" color="inherit" href={website}>
+              <Link
+                variant="body2"
+                color="inherit"
+                href={website}
+                sx={{ fontSize: "0.70rem" }}
+              >
                 {website}
               </Link>
             </Stack>
