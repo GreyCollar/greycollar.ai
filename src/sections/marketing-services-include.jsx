@@ -167,7 +167,9 @@ export default function MarketingServicesInclude() {
 
         {/* Bg and content*/}
         <Grid item xs={12} md={8}>
-          <Box sx={{ mt: 2, width: 550, ml: { xs: 0, md: 28 } }}>
+          <Box
+            sx={{ mt: 2, width: { md: 400, lg: 550 }, ml: { md: 18, lg: 26 } }}
+          >
             <Typography variant="h4" sx={{ textAlign: "start", mb: 1 }}>
               {tabsData[selectedTab].title}
             </Typography>
@@ -193,7 +195,12 @@ export default function MarketingServicesInclude() {
 
         {/* Tree */}
         <Grid item xs={12} md={4}>
-          <Box sx={{ display: "flex", justifyContent: "center" }}>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
             <Tree
               lineWidth="2px"
               lineColor={lineColor}
