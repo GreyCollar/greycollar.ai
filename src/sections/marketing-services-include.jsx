@@ -132,6 +132,12 @@ export default function MarketingServicesInclude() {
 
   return (
     <Container sx={{ pt: { xs: 5, md: 10 }, pb: { xs: 10, md: 15 } }}>
+      {
+        // Preload images due to lazy loading in background
+        tabsData.map((tab, index) => (
+          <img key={index} style={{ display: "none" }} src={tab.bgImage} />
+        ))
+      }
       <Grid container>
         {/* Tabs */}
         <Grid xs={12} md={12} sx={{ mb: 3 }}>
