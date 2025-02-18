@@ -16,7 +16,7 @@ import { alpha, useTheme } from "@mui/material/styles";
 
 const TIMELINES = [
   {
-    prompt: '"Do you have a parking spot at your store?"',
+    prompt: 'Customer: "Do you have a parking spot at your store?"',
     code:
       "> SESSION.USER_MESSAGED                 \n" +
       "{                                     \n" +
@@ -26,7 +26,7 @@ const TIMELINES = [
     direction: "left",
   },
   {
-    prompt: "Please wait a moment while working on the answer.",
+    prompt: 'AI: "Please wait a moment while working on the answer."',
     direction: "right",
     code: `> SUPERVISING.RAISED
   {
@@ -35,31 +35,47 @@ const TIMELINES = [
   }`,
   },
   {
-    prompt: '"All humans are mortal"',
+    prompt:
+      'Supervisor: "Yes, we have a parking spot in the back of the store."',
+    direction: "right",
+    code: `> SUPERVISING.ANSWERED
+  {
+    sessionId: "2116847c",
+    question: "Yes, we have ... of the store."
+  }`,
+  },
+  {
+    prompt: 'AI: "Yes, we have a parking spot in the back of the store."',
+    direction: "right",
+    code: `> SESSION.USER_MESSAGED
+  {
+    sessionId: "2116847c",
+    question: "Yes, we have ... of the store."
+  }`,
+  },
+  {
+    prompt: "A Few Moments Later... 🍍",
     direction: "right",
   },
   {
-    prompt: "Mortality is defined for humans.",
-    code: "> $Human.mortal = true",
+    prompt:
+      'Customer #2: "Planning to come down there, how is parking situation?"',
+    code:
+      "> SESSION.USER_MESSAGED                 \n" +
+      "{                                     \n" +
+      'sessionId: "3746a52b",              \n' +
+      'content: "Planning ... situation?"  \n' +
+      "}                                     \n",
     direction: "left",
   },
   {
-    prompt: '"Socrates is a human"',
+    prompt: 'AI: "Yes, most certainly, we have a parking spot in the back. 😎"',
     direction: "right",
-  },
+    code: `> SESSION.USER_MESSAGED
   {
-    prompt: "Socrates is created as a human.",
-    code: "> socrates = new Human('Socrates')",
-    direction: "left",
-  },
-  {
-    prompt: '"Is Socrates mortal?"',
-    direction: "right",
-  },
-  {
-    prompt: "Confirmed that Socrates is mortal",
-    code: "> socrates.mortal === true\ntrue",
-    direction: "right",
+    sessionId: "3746a52b",
+    question: "Yes, most ... in the back."
+  }`,
   },
 ];
 
