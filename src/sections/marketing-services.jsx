@@ -45,7 +45,7 @@ export default function MarketingServices() {
 
         <Grid xs={12} md={6} lg={6}>
           <Stack spacing={3} sx={{ mb: 5 }}>
-            <Typography variant="h3">What is Neuro-Symbolic AI?</Typography>
+            <Typography variant="h3">What is AI Agent?</Typography>
 
             <Typography sx={{ color: "text.secondary" }}>
               Neuro-Symbolic AI combines the strengths of neural networks
