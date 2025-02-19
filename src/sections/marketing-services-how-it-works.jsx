@@ -45,6 +45,10 @@ const TIMELINES = [
   }`,
   },
   {
+    prompt: "Knowledge is stored for future reference. 🧠",
+    direction: "right",
+  },
+  {
     prompt: 'AI: "Yes, we have a parking spot in the back of the store."',
     direction: "right",
     code: `> SESSION.USER_MESSAGED
