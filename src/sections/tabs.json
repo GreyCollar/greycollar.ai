@@ -1,28 +1,28 @@
 [
   {
-    "title": "Sales",
+    "title": "Customer Service",
     "bgImage": "/assets/Illustration_1.png",
     "description": "Maximize your sales potential with a structured and automated workflow. Capture, research, and engage leads with personalized outreach while seamlessly handling objections. Turn prospects into customers with data-driven strategies, automated follow-ups, and well-planned meetings. Scale your sales activity effortlessly and close more deals with efficiency.",
     "services": [
-      { "title": "Receive Lead", "icon": "logos:google-gmail", "index": 0 },
-      { "title": "Lead Research", "icon": "academicons:researcherid", "index": 1 },
-      { "title": "Personalized Outreach", "icon": "skill-icons:linkedin", "index": 2 },
-      { "title": "Respond to Objections", "icon": "skill-icons:linkedin", "index": 3 },
-      { "title": "Confirm Meeting", "icon": "logos:google-meet", "index": 4 },
-      { "title": "Meet", "icon": "devicon:slack", "index": 5 }
+      { "title": "Receive issue", "icon": "logos:google-gmail", "index": 0 },
+      { "title": "Talk to technician", "index": 1 },
+      { "title": "Open ticket", "icon": "logos:salesforce", "index": 2 },
+      { "title": "Ask to Supervisor", "index": 3 },
+      { "title": "Assign to AI", "index": 4 },
+      { "title": "DELETE", "icon": "devicon:slack", "index": 5 }
     ]
   },
   {
-    "title": "Support",
+    "title": "Scheduler Assistant",
     "bgImage": "/assets/Illustration_2.png",
     "description": "Deliver exceptional customer support with a streamlined workflow that ensures every issue is addressed efficiently. From ticket creation to issue resolution, provide timely assistance and technical support. Foster strong customer relationships with proactive follow-ups, keeping clients engaged and satisfied. Elevate your support game with automation and smart communication tools.",
     "services": [
-      { "title": "Ticket Creation", "icon": "academicons:researcherid", "index": 0 },
-      { "title": "Issue Analysis", "icon": "logos:google-analytics", "index": 1 },
-      { "title": "Technical Support", "icon": "skill-icons:github-dark", "index": 2 },
-      { "title": "Problem Resolution", "icon": "logos:slack", "index": 3 },
-      { "title": "Follow-up", "icon": "logos:intercom", "index": 4 },
-      { "title": "Meet", "icon": "devicon:slack", "index": 5 }
+      { "title": "Appointment requested", "icon": "flat-color-icons:sms", "index": 0 },
+      { "title": "Check availability", "icon": "logos:google-calendar", "index": 1 },
+      { "title": "Assign to AI", "index": 2 },
+      { "title": "Confirm with Supervisor", "index": 3 },
+      { "title": "Questionnaire", "icon": "flat-color-icons:sms", "index": 4 },
+      { "title": "Ask further questions", "icon": "flat-color-icons:sms", "index": 5 }
     ]
   },
   {
