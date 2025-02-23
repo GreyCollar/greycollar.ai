@@ -102,33 +102,29 @@ export const _brandsColor = BRANDS_NAME.map((brand, index) => ({
 
 export const _faqs = [
   {
-    question: "What is Nucleoid?",
+    question: "What is GreyCollar?",
     answer:
-      "Nucleoid is a Declarative (Logic) Runtime Environment (D(L)RE) designed to simplify programming by abstracting the logic layer from the imperative code structure. It allows developers to define the logic of their applications declaratively, which the runtime environment then executes efficiently. This approach aims to reduce complexity, improve maintainability, and enhance the scalability of software applications.",
+      "GreyCollar is a supervised AI agent designed to enhance human-AI collaboration. It integrates human feedback into its learning and decision-making processes, allowing for autonomous task execution while remaining under human supervision for better control and relevance.",
   },
   {
-    question:
-      "How does Nucleoid differ from traditional programming environments?",
+    question: "How does the human-in-the-loop system work?",
     answer:
-      'Traditional programming environments typically rely on imperative programming paradigms, where the developer explicitly codes not only what the program should achieve but also how it should do it, step by step. Nucleoid, being a Declarative (Logic) Runtime Environment, focuses on the "what" part—allowing developers to specify the desired outcomes or logic without detailing the control flow or state management. This can lead to more intuitive code, easier maintenance, and potentially fewer bugs, as Nucleoid manages the execution path and state internally.',
+      "GreyCollar allows users to provide real-time feedback during its operation. This feedback helps adjust the AI's actions, ensuring it aligns with user intentions and improves over time through supervised learning.",
   },
   {
-    question: "What are the main features of Nucleoid?",
+    question: "What makes GreyCollar different from other AI tools?",
     answer:
-      "Declarative Logic Processing: Enables defining application logic in a declarative manner, focusing on the logic rules and desired outcomes.\n" +
-      "Automatic State Management: Manages application state automatically, reducing the need for explicit state management code and minimizing state-related bugs.\n" +
-      "Efficiency and Performance: Optimized to efficiently execute declarative logic, potentially improving performance for certain types of applications.\n" +
-      "Ease of Use: Aims to provide a simpler and more intuitive approach to application development, especially for complex logic and state management scenarios.",
+      "Unlike fully autonomous AI tools, GreyCollar emphasizes human supervision through its human-in-the-loop system. This ensures that all AI actions remain aligned with human intent, providing more accurate and contextually relevant outcomes.",
   },
   {
-    question: "Can Nucleoid be used in a microservices architecture?",
+    question: "What industries can benefit from using GreyCollar?",
     answer:
-      "Yes, Nucleoid can be integrated into a microservices architecture. Its declarative logic and automatic state management make it well-suited for building individual microservices, especially those requiring complex logic or state management. Nucleoid's runtime environment can run independently within a microservice, allowing developers to implement business logic declaratively and efficiently. Its compatibility with standard technologies and ability to integrate with other services and databases make it a flexible choice for microservices-based applications.",
+      "GreyCollar is versatile and can be applied across various industries, including finance, healthcare, customer service, research, and technology. Its ability to automate tasks with human supervision makes it useful for any field that values both efficiency and accuracy.",
   },
   {
-    question: "How does Nucleoid ensure data consistency and integrity?",
+    question: "Do I need AI expertise to use GreyCollar?",
     answer:
-      "Nucleoid ensures data consistency and integrity through its internal mechanisms for state management and transaction handling. By abstracting the state and logic, it provides a framework where all state changes are controlled and validated by the runtime environment. This minimizes the risk of inconsistencies and integrity violations. Additionally, Nucleoid can be configured to work with external databases and systems, where it leverages existing mechanisms for data consistency and transactional integrity, ensuring that the application logic aligns with the data storage and management policies.",
+      "No, you don’t need to be an AI expert to use GreyCollar. The platform is designed with user-friendly features and clear documentation, making it accessible for users with basic technical knowledge. However, advanced users can dive deeper into customization and integrations.",
   },
 ].map(({ question, answer }, index) => ({
   id: _mock.id(index),
