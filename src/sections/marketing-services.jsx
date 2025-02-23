@@ -11,9 +11,9 @@ import { paths } from "src/routes/paths";
 // ----------------------------------------------------------------------
 
 const LISTS = [
-  "Combines Learning and Reasoning",
-  "Enhanced Understanding and Decision-Making",
-  "Leveraging Formal Logic in AI",
+  "Autonomous Workflow: An AI agent gathers information, processes it, and takes actions to achieve goals, adjusting to its environment as needed.",
+  "Supervised learning: Enhances decision-making by learning from labeled data to recognize patterns and make accurate predictions.",
+  "Adaptation: Learns over time, refining actions through feedback to handle dynamic environments and complex tasks",
 ];
 
 // ----------------------------------------------------------------------
@@ -48,32 +48,23 @@ export default function MarketingServices() {
             <Typography variant="h3">What is AI Agent?</Typography>
 
             <Typography sx={{ color: "text.secondary" }}>
-              Neuro-Symbolic AI combines the strengths of neural networks
-              (neuro) and symbolic AI to create systems that can both understand
-              and reason about the world. Neural networks are excellent at
-              processing and learning from large amounts of data, particularly
-              in tasks that involve pattern recognition, such as image and
-              speech recognition. They, however, struggle with tasks that
-              require deep logical reasoning or understanding the underlying
-              causal relationships in data.
+              An AI agent is an autonomous system designed to perceive its
+              environment, process information, and take actions to achieve
+              specific goals. It gathers inputs from its surroundings, analyzes
+              data through algorithms or predefined rules, and performs actions
+              that influence its environment. Some agents are reactive,
+              responding directly to stimuli, while more advanced agents use
+              internal models and goals to plan actions strategically.
               <br />
               <br />
-              <center>
-                <Image
-                  alt="Neuro is used for learning and Symbolic is used for reasoning in Neuro-Symbolic AI"
-                  src="/assets/images/marketing/9ea56621-bcfe-4495-b291-0c26ba8b18ab.png"
-                  width={200}
-                />
-              </center>
-              <br />
-              Symbolic AI, on the other hand, involves the use of symbolic
-              reasoning to process knowledge and solve problems. It is based on
-              the manipulation of symbols (which represent objects and concepts)
-              and the use of logic to infer new knowledge or make decisions.
-              Symbolic AI excels at tasks that require understanding of rules,
-              structured logic, and explicit knowledge representation, but it
-              lacks the flexibility and learning capability of neural networks,
-              especially when dealing with noisy, unstructured data.
+              Supervised learning is essential for AI agents as it provides a
+              structured approach to learning from labeled data, enabling the
+              agent to make accurate predictions and informed decisions.
+              Advanced AI agents can incorporate learning mechanisms, allowing
+              them to improve their performance over time through experience. In
+              supervised learning, the agent adjusts its behavior based on
+              feedback from the training data, minimizing errors by comparing
+              its predictions to the correct outcomes.
             </Typography>
 
             <Stack spacing={2}>
