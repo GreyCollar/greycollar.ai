@@ -9,37 +9,37 @@ const SERVICES = [
   {
     title: "Standalone",
     description:
-      "Define application goals without specifying the procedures, simplifying development and maintenance.",
+      "Operates independently without reliance on programmed static flows, offering complete flexibility and control.",
     icon: "https://cdn.nucleoid.com/media/019-cube.png",
   },
   {
     title: "Supervised",
     description:
-      "Our runtime environment automatically deduces and infers solutions based on the given logic, enhancing decision-making.",
+      "Allows for human-in-the-loop oversight, ensuring alignment with business goals and directions for complex jobs.",
     icon: "https://cdn.nucleoid.com/media/015-code.png",
   },
   {
     title: "Realistic",
     description:
-      "Write code that mirrors human reasoning, making complex problem-solving more intuitive and efficient.",
+      "Delivers context-aware, natural interactions that mirror real-world decision-making processes for day-to-day tasks",
     icon: "https://cdn.nucleoid.com/media/007-AI.png",
   },
   {
     title: "Async Communication",
     description:
-      "Applications understand and react to their context, offering smarter, situation-aware responses.",
+      "Enables seamless asynchronous communication for handling complex, multi-threaded task load.",
     icon: "https://cdn.nucleoid.com/media/028-network.png",
   },
   {
     title: "Autonomous Workflow",
     description:
-      "Data persists in its natural logical form, streamlining management and ensuring integrity without manual database handling.",
+      "Facilitates self-sufficient task execution, allowing agents to make decisions and adapt without manual intervention.",
     icon: "https://cdn.nucleoid.com/media/019-database-5.png",
   },
   {
     title: "Event-driven Architecture",
     description:
-      "Extends JavaScript syntax to declaratively define logic and the runtime re-renders the syntax into executable code",
+      "Unlike linear or static workflows, EDA is designed to handle unpredictable scenarios and asynchronous triggers.",
     icon: "https://cdn.nucleoid.com/media/leaf.png",
   },
 ];
