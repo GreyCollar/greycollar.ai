@@ -89,7 +89,10 @@ export default function MarketingServices() {
           <center>
             <Button
               onClick={() =>
-                window.open("https://github.com/NucleoidJS/Nucleoid", "_blank")
+                window.open(
+                  "https://github.com/greycollar/greycollar",
+                  "_blank",
+                )
               }
               href={paths.marketing.caseStudies}
               size="large"
