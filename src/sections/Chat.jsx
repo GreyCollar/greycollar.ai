@@ -36,7 +36,7 @@ export default function Chat() {
               style={{
                 display: "flex",
                 alignItems: "center",
-                padding: "8px 12px",
+                padding: "4px 12px",
                 background: "#333",
                 borderBottom: "1px solid #444",
               }}
@@ -50,24 +50,24 @@ export default function Chat() {
               >
                 <div
                   style={{
-                    width: "12px",
-                    height: "12px",
+                    width: "10px",
+                    height: "10px",
                     background: "#ff5f57",
                     borderRadius: "50%",
                   }}
                 ></div>
                 <div
                   style={{
-                    width: "12px",
-                    height: "12px",
+                    width: "10px",
+                    height: "10px",
                     background: "#ffbc2f",
                     borderRadius: "50%",
                   }}
                 ></div>
                 <div
                   style={{
-                    width: "12px",
-                    height: "12px",
+                    width: "10px",
+                    height: "10px",
                     background: "#28c840",
                     borderRadius: "50%",
                   }}
@@ -89,9 +89,9 @@ export default function Chat() {
                 borderWidth: "0px 1px 1px 2px",
                 background: "#464646",
               }}
-              poster="https://cdn.nucleoid.com/media/thumbnail-1.png"
+              poster="https://cdn.nucleoid.com/media/5d866316-72f8-4955-be3c-f0e2c4066fa6.jpg"
             >
-              <source src="/assets/af1771e7-9a0c-456d-900d-3a6ca92d6c29.mp4" />
+              <source src="https://cdn.nucleoid.com/media/618a935b-9b4b-406c-95b5-7223396b8bc4.mp4" />
             </video>
           </div>
         </Grid>
