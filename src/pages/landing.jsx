@@ -1,6 +1,7 @@
 import Chat from "../sections/Chat";
 import { Helmet } from "react-helmet-async";
 import MarketingCaseStudyDetails from "../sections/marketing-case-study-details";
+import MarketingIntegrationsList from "src/sections/marketing-integrations-list";
 import MarketingLandingFaqs from "../sections/marketing-landing-faqs";
 import MarketingLandingHero from "../sections/marketing-landing-hero";
 import MarketingNewsletter from "../sections/marketing-newsletter";
@@ -21,6 +22,8 @@ export default function MarketingLandingPage() {
       <MarketingServicesList />
 
       <Chat />
+
+      <MarketingIntegrationsList />
 
       <MarketingServicesInclude />
 

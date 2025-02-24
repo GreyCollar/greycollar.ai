@@ -15,7 +15,7 @@ export default function Chat() {
         display: { md: "flex" },
         justifyContent: { md: "center" },
         alignItems: { md: "center" },
-        pt: 8,
+        pt: 2,
       }}
     >
       <Grid xs={12} md={6} lg={7}>
@@ -112,7 +112,7 @@ export default function Chat() {
               window.location.assign("https://land.greycollar.ai");
             }}
             sx={{
-              mx: 1,
+              mb: 6,
               textTransform: "none",
               color: "white",
             }}
