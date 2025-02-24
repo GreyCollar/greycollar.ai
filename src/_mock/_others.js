@@ -31,14 +31,14 @@ export const _socials = [
     label: "GitHub",
     icon: "carbon:logo-github",
     color: "white",
-    url: "https://github.com/NucleoidJS/Nucleoid",
+    url: "https://github.com/greycollar/greycollar",
   },
   {
     value: "x",
     label: "X",
     icon: "carbon:logo-x",
     color: "white",
-    url: "https://twitter.com/NucleoidJS",
+    url: "https://twitter.com/greycollarai",
   },
   {
     value: "discord",

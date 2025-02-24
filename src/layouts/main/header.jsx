@@ -57,7 +57,7 @@ export default function Header({ headerOnDark }) {
           <Button
             variant="contained"
             onClick={() =>
-              window.location.assign("https://nucleoid.com/ide/chat")
+              window.location.assign("https://land.nucleoid.com")
             }
             sx={{
               mx: 1,

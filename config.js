@@ -1,5 +1,5 @@
 const config = {
-  name: "nucleoid.ai",
+  name: "greycollar.ai",
 };
 
 export default config;

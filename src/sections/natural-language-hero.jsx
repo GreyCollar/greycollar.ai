@@ -79,7 +79,7 @@ export default function NaturalLanguageHero() {
                 size="large"
                 startIcon={<Iconify width={24} icon="carbon:document" />}
                 onClick={() =>
-                  window.location.assign("https://nucleoid.com/docs/")
+                  window.location.assign("https://greycollar.ai/docs/")
                 }
               >
                 Go to Docs
@@ -94,7 +94,7 @@ export default function NaturalLanguageHero() {
                   size="medium"
                   sx={{ mr: 1 }}
                   onClick={() =>
-                    window.location.assign("https://nucleoid.com/ide/chat")
+                    window.location.assign("https://land.greycollar.ai")
                   }
                 >
                   <Iconify width={24} icon="carbon:play" />

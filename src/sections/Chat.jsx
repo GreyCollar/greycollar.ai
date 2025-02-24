@@ -109,7 +109,7 @@ export default function Chat() {
             size="large"
             variant="outlined"
             onClick={() => {
-              window.location.assign("https://nucleoid.com/ide/chat");
+              window.location.assign("https://land.greycollar.ai");
             }}
             sx={{
               mx: 1,

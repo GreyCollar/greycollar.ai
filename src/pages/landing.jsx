@@ -8,18 +8,8 @@ import MarketingServices from "../sections/marketing-services";
 import MarketingServicesHowItWorks from "../sections/marketing-services-how-it-works";
 import MarketingServicesInclude from "../sections/marketing-services-include";
 import MarketingServicesList from "../sections/marketing-services-list";
-import gtag from "../gtag";
-import { useEffect } from "react";
 
 export default function MarketingLandingPage() {
-  useEffect(() => {
-    gtag("event", "page_view", {
-      page_title: "Neuro-Symbolic AI",
-      page_location: "https://nucleoid.com/",
-      page_path: "/neuro-symbolic-ai",
-    });
-  }, []);
-
   return (
     <>
       <Helmet>
