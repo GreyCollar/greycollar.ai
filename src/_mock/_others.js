@@ -45,7 +45,7 @@ export const _socials = [
     label: "Discord",
     icon: "carbon:logo-discord",
     color: "white",
-    url: "https://discord.gg/wN49SNssUw",
+    url: "https://discord.gg/wNmcnkDnkM",
   },
 ];
 
