@@ -13,7 +13,7 @@ export default function MarketingLandingHero() {
   const theme = useTheme();
 
   // eslint-disable-next-line no-unused-vars
-  const mdUp = useResponsive("up", "md");
+  const smUp = useResponsive("up", "sm");
 
   return (
     <Box
@@ -90,7 +90,18 @@ export default function MarketingLandingHero() {
                 fontSize={60}
                 sx={{ textShadow: "4px 4px 6px rgba(0,0,0,1)" }}
               >
-                Your Supervised AI Colleague
+                {smUp && "Your Supervised AI Colleague"}
+                {!smUp && (
+                  <>
+                    Your
+                    <br />
+                    Supervised
+                    <br />
+                    AI
+                    <br />
+                    Colleague
+                  </>
+                )}
               </Typography>
             </Box>
             <Typography sx={{ color: "text.secondary" }}></Typography>
