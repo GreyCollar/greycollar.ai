@@ -81,6 +81,7 @@ export default function MarketingLandingHero() {
             <Box
               sx={{
                 display: "flex",
+                flexDirection: "column",
                 justifyContent: "center",
                 alignItems: "center",
                 height: "100vh",
@@ -103,8 +104,16 @@ export default function MarketingLandingHero() {
                   </>
                 )}
               </Typography>
+              <Typography
+                sx={{
+                  color: "text.secondary",
+                  textShadow: "2px 2px 4px rgba(0,0,0,1)",
+                  fontSize: 28,
+                }}
+              >
+                Supervised AI Agent for Enterprise
+              </Typography>
             </Box>
-            <Typography sx={{ color: "text.secondary" }}></Typography>
           </Grid>
         </Grid>
       </Container>
