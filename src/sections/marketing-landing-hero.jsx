@@ -88,19 +88,15 @@ export default function MarketingLandingHero() {
               }}
             >
               <Typography
-                fontSize={60}
+                fontSize={smUp ? 60 : 50}
                 sx={{ textShadow: "4px 4px 6px rgba(0,0,0,1)" }}
               >
                 {smUp && "Your Supervised AI Colleague"}
                 {!smUp && (
                   <>
-                    Your
+                    Your&nbsp;Supervised
                     <br />
-                    Supervised
-                    <br />
-                    AI
-                    <br />
-                    Colleague
+                    AI&nbsp;Colleague
                   </>
                 )}
               </Typography>
@@ -108,10 +104,10 @@ export default function MarketingLandingHero() {
                 sx={{
                   color: "text.secondary",
                   textShadow: "2px 2px 4px rgba(0,0,0,1)",
-                  fontSize: 28,
+                  fontSize: smUp ? 28 : 26,
                 }}
               >
-                Supervised AI Agent for Enterprise
+                Supervised&nbsp;AI&nbsp;Agent&nbsp;for Enterprise
               </Typography>
             </Box>
           </Grid>
