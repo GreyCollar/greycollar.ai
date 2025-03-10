@@ -107,7 +107,7 @@ export default function MarketingLandingHero() {
                   fontSize: smUp ? 28 : 26,
                 }}
               >
-                Supervised&nbsp;AI&nbsp;Agent&nbsp;for Enterprise
+                Supervised&nbsp;AI&nbsp;Agents&nbsp;for Enterprise
               </Typography>
             </Box>
           </Grid>
