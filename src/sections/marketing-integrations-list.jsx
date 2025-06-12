@@ -8,7 +8,7 @@ export default function MarketingIntegrationsList() {
   return (
     <>
       <Typography variant="h3" textAlign={"center"} sx={{ mb: 2 }}>
-        Our Integrations
+        Our Integrations with MCP
       </Typography>
       <Box
         sx={{

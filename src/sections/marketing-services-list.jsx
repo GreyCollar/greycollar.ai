@@ -13,7 +13,7 @@ const SERVICES = [
     icon: "https://cdn.nucleoid.com/media/019-cube.png",
   },
   {
-    title: "Supervised",
+    title: "Supervised Learning",
     description:
       "Allows for human-in-the-loop oversight, ensuring alignment with business goals and directions for complex jobs.",
     icon: "https://cdn.nucleoid.com/media/015-code.png",
@@ -21,13 +21,13 @@ const SERVICES = [
   {
     title: "Realistic",
     description:
-      "Delivers context-aware, natural interactions that mirror real-world decision-making processes for day-to-day tasks",
+      "Delivers context-aware, natural interactions that mirror real-world decision-making processes for day-to-day tasks.",
     icon: "https://cdn.nucleoid.com/media/007-AI.png",
   },
   {
-    title: "Async Communication",
+    title: "MCP Support",
     description:
-      "Enables seamless asynchronous communication for handling complex, multi-threaded task load.",
+      "Enables seamless integration for handling complex tasks, leveraging the power of the Model Context Protocol.",
     icon: "https://cdn.nucleoid.com/media/028-network.png",
   },
   {

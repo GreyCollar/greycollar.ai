@@ -13,7 +13,7 @@ const StarUsOnGithub = () => (
       color: "white",
     }}
     onClick={() =>
-      window.open("https://github.com/greycollar/greycollar", "_blank")
+      window.open("https://github.com/GreyCollar/GreyCollar", "_blank")
     }
   >
     Star us on GitHub

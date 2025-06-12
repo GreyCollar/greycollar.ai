@@ -56,7 +56,12 @@ export default function Header({ headerOnDark }) {
         <Stack spacing={1} direction="row" alignItems="center">
           <Button
             variant="contained"
-            onClick={() => window.location.assign("https://land.greycollar.ai")}
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLScV79niYlvgktcItuIhUPc0DBFi1i1sBvxp7LdXMVyTUZBZsQ/viewform?usp=dialog",
+                "_blank",
+              )
+            }
             sx={{
               mx: 1,
               color: "white",
@@ -66,12 +71,11 @@ export default function Header({ headerOnDark }) {
               display: { xs: "none", md: "block" },
             }}
           >
-            Go to Dashboard
+            Book a Demo
           </Button>
           <StarUsOnGithub />
         </Stack>
       </Stack>
-
       {!mdUp && <NavMobile data={navConfig} />}
     </>
   );

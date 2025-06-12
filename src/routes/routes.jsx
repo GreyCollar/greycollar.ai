@@ -1,6 +1,6 @@
+import ConsultingPage from "../pages/consulting.jsx";
 import MainLayout from "../layouts/main";
 import { SplashScreen } from "src/components/loading-screen";
-
 import { Navigate, Outlet, useRoutes } from "react-router-dom";
 import { Suspense, lazy } from "react";
 
@@ -26,6 +26,19 @@ export default function Router() {
               element: (
                 <MainLayout disabledSpacing>
                   <LandingPage />
+                </MainLayout>
+              ),
+              index: true,
+            },
+          ],
+        },
+        {
+          path: "consulting",
+          children: [
+            {
+              element: (
+                <MainLayout disabledSpacing>
+                  <ConsultingPage />
                 </MainLayout>
               ),
               index: true,

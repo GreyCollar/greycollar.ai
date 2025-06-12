@@ -9,7 +9,7 @@ import { alpha, useTheme } from "@mui/material/styles";
 
 // ----------------------------------------------------------------------
 
-export default function MarketingLandingHero() {
+export default function MarketingLandingConsultingHero() {
   const theme = useTheme();
 
   // eslint-disable-next-line no-unused-vars
