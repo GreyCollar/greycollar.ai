@@ -20,7 +20,7 @@ export default function MarketingLandingPlatformHero() {
     <Box
       sx={{
         ...bgGradient({
-          color: alpha(theme.palette.background.default, 0.95),
+          color: alpha(theme.palette.background.default, 0.9),
           imgUrl: "/assets/background/overlay_3.jpg",
         }),
         overflow: "hidden",
@@ -44,13 +44,15 @@ export default function MarketingLandingPlatformHero() {
             <Typography
               sx={{
                 my: 2,
-                fontSize: 48,
+                fontSize: { xs: 32, md: 48 },
                 fontWeight: 400,
               }}
             >
               <br />
               Building{" "}
-              <Link href="https://nucleoid.com/docs">Human-AI Collabs</Link>
+              <Link href="https://github.com/GreyCollar/GreyCollar">
+                Human-AI Collabs
+              </Link>
               <br />
               with Supervised AI Agents
             </Typography>
