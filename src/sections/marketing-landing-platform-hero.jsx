@@ -26,13 +26,7 @@ export default function MarketingLandingPlatformHero() {
         overflow: "hidden",
       }}
     >
-      <Container
-        sx={{
-          display: { md: "flex" },
-          alignItems: { md: "center" },
-          height: { md: `100vh` },
-        }}
-      >
+      <Container>
         <Grid
           container
           flexDirection="row"
@@ -43,18 +37,18 @@ export default function MarketingLandingPlatformHero() {
           <Grid item>
             <Typography
               sx={{
-                my: 2,
-                fontSize: { xs: 32, md: 48 },
+                mt: 12,
+                fontSize: { xs: 36, md: 48 },
                 fontWeight: 400,
               }}
             >
+              Supervised AI Agents
               <br />
-              Building{" "}
+              for&nbsp;
               <Link href="https://github.com/GreyCollar/GreyCollar">
                 Human-AI Collabs
               </Link>
-              <br />
-              with Supervised AI Agents
+              🤝
             </Typography>
             <Stack
               spacing={3}
@@ -126,6 +120,7 @@ export default function MarketingLandingPlatformHero() {
             >
               <source src="https://cdn.nucleoid.com/media/618a935b-9b4b-406c-95b5-7223396b8bc4.mp4" />
             </video>
+            <br />
           </Grid>
         </Grid>
       </Container>
