@@ -1,13 +1,12 @@
 import Box from "@mui/material/Box";
+import Button from "@mui/material/Button";
 import Container from "@mui/material/Container";
 import Grid from "@mui/material/Unstable_Grid2";
+import Iconify from "../components/iconify/index.js";
 import React from "react";
 import Typography from "@mui/material/Typography";
 import { useResponsive } from "src/hooks/use-responsive";
-
 import { alpha, useTheme } from "@mui/material/styles";
-
-// ----------------------------------------------------------------------
 
 export default function MarketingLandingConsultingHero() {
   const theme = useTheme();
@@ -109,6 +108,21 @@ export default function MarketingLandingConsultingHero() {
               >
                 Supervised&nbsp;AI&nbsp;Agents&nbsp;for Enterprise
               </Typography>
+              <br />
+              <Button
+                variant="contained"
+                color="inherit"
+                size="large"
+                startIcon={<Iconify width={24} icon="fe:calendar" />}
+                onClick={() =>
+                  window.open(
+                    "https://docs.google.com/forms/d/e/1FAIpQLScV79niYlvgktcItuIhUPc0DBFi1i1sBvxp7LdXMVyTUZBZsQ/viewform?usp=dialog",
+                    "_blank",
+                  )
+                }
+              >
+                Book a Demo
+              </Button>
             </Box>
           </Grid>
         </Grid>
