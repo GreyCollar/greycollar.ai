@@ -162,9 +162,18 @@ export default function MarketingLandingPlatformHero() {
                 <Button
                   variant="contained"
                   size="large"
-                  startIcon={<Iconify width={24} icon="carbon:rocket" />}
+                  startIcon={
+                    <Iconify
+                      width={24}
+                      icon="devicon:github"
+                      sx={{ color: "white" }}
+                    />
+                  }
                   onClick={() =>
-                    window.location.assign("https://greycollar.ai/docs/")
+                    window.open(
+                      "https://github.com/GreyCollar/GreyCollar",
+                      "_blank",
+                    )
                   }
                   sx={{
                     py: 1.5,
@@ -187,12 +196,9 @@ export default function MarketingLandingPlatformHero() {
                 <Button
                   variant="outlined"
                   size="large"
-                  startIcon={<Iconify width={24} icon="devicon:github" />}
+                  startIcon={<Iconify width={24} icon="lucide:book-open" />}
                   onClick={() =>
-                    window.open(
-                      "https://github.com/GreyCollar/GreyCollar",
-                      "_blank",
-                    )
+                    window.location.assign("https://greycollar.ai/docs/")
                   }
                   sx={{
                     py: 1.5,
@@ -209,7 +215,7 @@ export default function MarketingLandingPlatformHero() {
                     transition: "all 0.3s ease",
                   }}
                 >
-                  View on GitHub
+                  Go to Docs
                 </Button>
               </Stack>
             </Box>
