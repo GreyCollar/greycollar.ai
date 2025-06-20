@@ -13,8 +13,12 @@ import { keyframes } from "@mui/system";
 import { alpha, useTheme } from "@mui/material/styles";
 
 const float = keyframes`
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-20px); }
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
 `;
 
 const slideInUp = keyframes`
@@ -109,7 +113,7 @@ export default function MarketingLandingPlatformHero() {
             <Typography
               variant="h1"
               sx={{
-                fontSize: { xs: 42, sm: 52, md: 64 },
+                fontSize: { xs: 38, sm: 42, md: 42 },
                 fontWeight: 800,
                 lineHeight: 1.1,
                 mb: 3,
@@ -137,22 +141,22 @@ export default function MarketingLandingPlatformHero() {
                   },
                 }}
               >
-                Human-AI Collaboration
+                Human-AI Collabs
               </Box>
+              🤝
             </Typography>
 
             <Typography
-              variant="h5"
               sx={{
                 color: theme.palette.text.secondary,
                 mb: 4,
                 fontWeight: 400,
                 lineHeight: 1.6,
+                fontSize: { xs: 18, sm: 20, md: 22 },
               }}
             >
-              Empower your team with intelligent automation that works alongside
-              humans, not against them. Experience the future of collaborative
-              AI.
+              &quot;Hallucination Control&quot; by Human-in-the-Loop
+              Human-in-the-Loop
             </Typography>
 
             <Stack
@@ -160,7 +164,6 @@ export default function MarketingLandingPlatformHero() {
               direction={{ xs: "column", sm: "row" }}
               alignItems="center"
               justifyContent="center"
-              sx={{ mb: 4 }}
             >
               <Button
                 variant="contained"
@@ -184,16 +187,22 @@ export default function MarketingLandingPlatformHero() {
                   fontSize: 16,
                   fontWeight: 600,
                   background: `linear-gradient(135deg, ${theme.palette.primary.main}, ${theme.palette.secondary.main})`,
-                  boxShadow: `0 8px 24px ${alpha(theme.palette.primary.main, 0.3)}`,
+                  boxShadow: `0 8px 24px ${alpha(
+                    theme.palette.primary.main,
+                    0.3,
+                  )}`,
                   "&:hover": {
                     background: `linear-gradient(135deg, ${theme.palette.secondary.main}, ${theme.palette.primary.main})`,
                     transform: "translateY(-2px)",
-                    boxShadow: `0 12px 32px ${alpha(theme.palette.primary.main, 0.4)}`,
+                    boxShadow: `0 12px 32px ${alpha(
+                      theme.palette.primary.main,
+                      0.4,
+                    )}`,
                   },
                   transition: "all 0.3s ease",
                 }}
               >
-                Start Building
+                Star us on GitHub
               </Button>
 
               <Button
@@ -239,7 +248,10 @@ export default function MarketingLandingPlatformHero() {
                 border: `1px solid ${alpha(theme.palette.divider, 0.1)}`,
                 borderRadius: 4,
                 overflow: "hidden",
-                boxShadow: `0 24px 48px ${alpha(theme.palette.common.black, 0.12)}`,
+                boxShadow: `0 24px 48px ${alpha(
+                  theme.palette.common.black,
+                  0.12,
+                )}`,
                 position: "relative",
               }}
             >
@@ -257,7 +269,10 @@ export default function MarketingLandingPlatformHero() {
                     alignItems: "center",
                     py: 1,
                     background: alpha(theme.palette.background.neutral, 0.5),
-                    borderBottom: `1px solid ${alpha(theme.palette.divider, 0.1)}`,
+                    borderBottom: `1px solid ${alpha(
+                      theme.palette.divider,
+                      0.1,
+                    )}`,
                   }}
                 ></Box>
 
