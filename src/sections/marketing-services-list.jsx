@@ -7,7 +7,7 @@ import Typography from "@mui/material/Typography";
 
 const SERVICES = [
   {
-    title: "Standalone",
+    title: "Agentic",
     description:
       "Operates independently without reliance on programmed static flows, offering complete flexibility and control.",
     icon: "https://cdn.nucleoid.com/media/019-cube.png",
