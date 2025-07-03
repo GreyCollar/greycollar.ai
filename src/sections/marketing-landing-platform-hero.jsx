@@ -155,8 +155,7 @@ export default function MarketingLandingPlatformHero() {
                 fontSize: { xs: 18, sm: 20, md: 22 },
               }}
             >
-              &quot;Hallucination Control&quot; by Human-in-the-Loop
-              Human-in-the-Loop
+              &quot;Hallucination Control&quot; via Human-in-the-Loop
             </Typography>
 
             <Stack
