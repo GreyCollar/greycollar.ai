@@ -5,6 +5,11 @@ export const paths = {
   marketing: {
     root: "/",
   },
+  // People
+  people: {
+    root: "/people",
+    person: (name) => `/people/${name}`,
+  },
   // Auth
   loginCover: "/auth/login-cover",
   loginBackground: "/auth/login-background",
