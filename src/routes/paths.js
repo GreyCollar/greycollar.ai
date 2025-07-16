@@ -5,6 +5,17 @@ export const paths = {
   marketing: {
     root: "/",
   },
+  // People
+  people: {
+    root: "/people",
+    person: (name) => `/people/${name}`,
+  },
+  // Blog
+  blog: {
+    root: "/blog",
+    posts: "/blog",
+    post: (slug) => `/blog/${slug}`,
+  },
   // Auth
   loginCover: "/auth/login-cover",
   loginBackground: "/auth/login-background",

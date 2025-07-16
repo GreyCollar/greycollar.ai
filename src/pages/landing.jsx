@@ -3,6 +3,7 @@ import MarketingCaseStudyDetails from "../sections/marketing-case-study-details"
 import MarketingIntegrationsList from "src/sections/marketing-integrations-list";
 import MarketingLandingFaqs from "../sections/marketing-landing-faqs";
 import MarketingLandingPlatformHero from "../sections/marketing-landing-platform-hero.jsx";
+import MarketingLandingPortfolio from "../sections/marketing-landing-portfolio";
 import MarketingNewsletter from "../sections/marketing-newsletter";
 import MarketingServices from "../sections/marketing-services";
 import MarketingServicesHowItWorks from "../sections/marketing-services-how-it-works";
@@ -17,6 +18,8 @@ export default function MarketingLandingPage() {
       </Helmet>
 
       <MarketingLandingPlatformHero />
+
+      <MarketingLandingPortfolio />
 
       <MarketingServicesList />
 

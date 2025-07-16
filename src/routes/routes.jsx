@@ -1,12 +1,16 @@
 import ConsultingPage from "../pages/consulting.jsx";
 import MainLayout from "../layouts/main";
 import { SplashScreen } from "src/components/loading-screen";
+
 import { Navigate, Outlet, useRoutes } from "react-router-dom";
 import { Suspense, lazy } from "react";
 
 const Page404 = lazy(() => import("src/pages/404"));
 const Page500 = lazy(() => import("src/pages/500"));
 const LandingPage = lazy(() => import("src/pages/landing"));
+const PersonProfilePage = lazy(() => import("src/pages/person-profile"));
+const BlogPostsPage = lazy(() => import("src/pages/blog-posts"));
+const BlogPostPage = lazy(() => import("src/pages/blog-post"));
 
 // ----------------------------------------------------------------------
 
@@ -42,6 +46,40 @@ export default function Router() {
                 </MainLayout>
               ),
               index: true,
+            },
+          ],
+        },
+        {
+          path: "blog",
+          children: [
+            {
+              element: (
+                <MainLayout>
+                  <BlogPostsPage />
+                </MainLayout>
+              ),
+              index: true,
+            },
+            {
+              path: ":slug",
+              element: (
+                <MainLayout>
+                  <BlogPostPage />
+                </MainLayout>
+              ),
+            },
+          ],
+        },
+        {
+          path: "people",
+          children: [
+            {
+              path: ":employeeName",
+              element: (
+                <MainLayout>
+                  <PersonProfilePage />
+                </MainLayout>
+              ),
             },
           ],
         },
