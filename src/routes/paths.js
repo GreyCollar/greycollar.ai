@@ -10,6 +10,12 @@ export const paths = {
     root: "/people",
     person: (name) => `/people/${name}`,
   },
+  // Blog
+  blog: {
+    root: "/blog",
+    posts: "/blog",
+    post: (slug) => `/blog/${slug}`,
+  },
   // Auth
   loginCover: "/auth/login-cover",
   loginBackground: "/auth/login-background",
